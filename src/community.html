@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta, Title, Styles, Scripts 
+	================================================== -->
+	<meta name="charset" content="UTF-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width" />
+	<title>You'll Speak</title>
+
+	<link rel="stylesheet" type="text/css" href="css/app.min.css">
+	
+</head>
+<body>
+<div class="off-canvas--body">
+
+	<!-- HEADER
+	================================================== -->
+	<header class="site-header mui--clearfix" role="banner">
+	<div class="site-header__inner mui--clearfix">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+ 
+               <div class="nav-wrap">
+     	
+
+     		<!-- Start Head -->
+			<div class="site-header__head">
+	          <a href="index.html">
+				<div class="logo--main" title="You'll Speak">You'll Speak</div>
+	          </a>
+			</div>
+			<!-- End Head -->
+
+
+			<!-- Start Hamburger -->
+			<button class="site-header__hamburger mui--clearfix">
+			<span class="site-header__hamburger--bar"></span>
+			</button>
+			<!-- End Hamburger -->
+
+
+			<!-- Start Login/Signin -->
+               <ul class="site-header__login-sign">
+               <!-- <li class="nav__item nav__item--login">
+               	<a href="#" class="mui-btn mui-btn--outline-snow">Log In</a>
+               </li>
+               <li class="nav__item">
+               	<a href="#" class="mui-btn mui-btn--primary">Sign Up</a>
+               </li> -->
+
+           <div class="loged-in-header">
+          	
+            <span class="site-header__icon-message">
+            <a href="profile-messages.html">
+			<img style="margin-bottom: 12px;" src="img/icons/ic_local_post_office.svg" />
+			<span class="site-header__icon-notification"></span>
+			</a>
+			</span>
+		
+        
+           <div class="mui-dropdown">
+
+			<button class="nav-avatar-btn" data-mui-toggle="dropdown">
+			     <img style="margin-left: 15px;" src="img/test/desktop-avatar.png" alt="User Avatar">
+			     <span class="nav-avatar-arrow mui-caret"></span>
+		  	</button>
+
+			<ul class="mui-dropdown__menu nav__avatar-dropdown menu-drop__list">
+
+				<li class="menu-drop__item">
+				<a href="profile-view.html" class="menu-drop__link">
+					<span class="menu-drop__img-wrap"><img style="background: #167f45;" alt="Profile Icon" class="menu-drop__img" src="img/icons/ic_account_circle_whitee.svg"></span>
+					<span class="menu-drop__text">Profile</span>
+				</a>
+				</li>
+
+				<li class="menu-drop__item">
+				<a href="community.html" class="menu-drop__link">
+					<span class="menu-drop__img-wrap"><img class="menu-drop__img" src="img/icons/ic_group.svg"></span>
+					<span class="menu-drop__text">Friends</span>
+				</a>
+				</li>
+
+				<li class="menu-drop__item">
+				<a href="profile-messages.html" class="menu-drop__link">
+					<span class="menu-drop__img-wrap"><img class="menu-drop__img" src="img/icons/ic_insert_comment_green.svg"></span>
+					<span class="menu-drop__text">Messages</span>
+				</a>
+				</li>
+
+				<li class="menu-drop__item">
+				<a href="groups.html" class="menu-drop__link">
+					<span class="menu-drop__img-wrap"><img class="menu-drop__img" src="img/icons/ic_forum_green.svg"></span>
+					<span class="menu-drop__text">Group Talks</span>
+				</a>
+				</li>
+
+				<li class="menu-drop__item">
+				<a href="profile-edit.html" class="menu-drop__link">
+					<span class="menu-drop__img-wrap"><img class="menu-drop__img" src="img/icons/ic_edit_green.svg"></span>
+					<span class="menu-drop__text">Edit</span>
+				</a>
+				</li>
+ 
+				<li class="menu-drop__item">
+			    	<a class="menu-drop__link" href="index.html">
+			    		<span class="menu-drop__text">Log out</span>
+			    	</a>
+				</li>
+				 
+				 
+				 
+			</ul>
+			</div>
+
+			</div>
+               </ul>
+               <!-- Stop Login/Signin -->
+
+
+               <!-- START NAVIGATION -->
+               <nav role="navigation">
+
+
+               <!-- Mobile View -->
+			<ul class="nav-mobile mui--clearfix">
+			<li class="mui-dropdown">
+				<button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+				EN
+				<span class="mui-caret"></span>
+				</button>
+				<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+				</ul>
+			</li>
+			</ul><!-- /mobile-nav -->
+
+
+			<!-- Tablet View -->
+               <ul class="nav-tablet mui--clearfix">
+			<li class="nav__item">
+			<div class="mui-dropdown">
+			<button class="nav__Link mui-btn mui-btn--lang mui-btn--no-pd " data-mui-toggle="dropdown">
+	          <span class="nav__icon-public">
+				<object class="icon-public" data="img/icons/ic_public.svg" type="image/svg+xml">
+				<img class="icon-public" src="img/icons/ic_public.svg" />
+				</object>
+			</span>
+			ENGLISH
+			<span class="mui-caret"></span>
+			</button>
+			<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+			</ul>
+			</div>
+			</li>
+               </ul>
+
+			<!-- Desktop View -->
+               <ul class="nav-desktop mui--clearfix">
+               <li class="nav__item">
+               <div class="mui-dropdown">
+                    <button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+                    Choose a Language
+                    <span class="mui-caret"></span>
+                    </button>
+                    <ul class="mui-dropdown__menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">Polish</a></li>
+                    </ul>
+               </div>
+               </li><!-- /lang -->
+               <li class="nav__item">
+                    <a href="community.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Members of community</a>
+               </li>
+               <li class="nav__item">
+                    <a href="groups.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Group Talks</a>
+               </li>
+			</ul><!-- /desktop-nav -->
+
+
+               </nav>
+               </div><!-- /nav-wrap -->
+               <!-- END NAVIGATION -->
+
+ 
+		</div><!-- /mui-col -->
+		</div><!-- /row --> 
+		</div><!-- /mui-container -->
+
+
+		<!-- START OFF CANVAS MENU -->
+		<nav class="canvas-menu" role="navigation">
+		<ul class="canvas-menu__list">
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Login</a>
+			</li>
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Sign Up</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="groups.html">Group talks</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_community_white.svg"></span>
+				<a class="canvas-menu__link" href="community.html">Members of Community</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_account_circle.svg"></span>
+				<a class="canvas-menu__link" href="profile-view.html">Profile</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon canvas--icon-message">
+
+					<object style="margin-bottom: 10px;" data="img/icons/ic_insert_comment.svg" type="image/svg+xml">
+					<img src="img/icons/ic_insert_comment.svg" />
+					</object>
+
+					<span class="canvas--icon-notification"></span>
+					
+				</span>
+				<a class="canvas-menu__link" href="profile-messages.html">Messages</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_group_white.svg"></span>
+				<a class="canvas-menu__link" href="community.html">Friends</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-edit.html">Edit profile</a>
+			</li>
+			<li class="canvas-menu__item">
+			 
+				<a class="canvas-menu__link" href="">Log Out</a>
+			</li>
+
+		</ul>
+		</nav>
+		<!-- END OFF CANVAS MENU -->
+
+
+	</div><!-- /site-header-inner -->
+	</header>
+ 	<!-- END SITE HEADER -->
+
+
+
+	<!-- BANNER -->
+ 	<section class="banner">
+	<div class="mui-container">
+	<div class="mui-row">
+	<div class="mui-col-xs-12">
+
+		 
+		<div class="mui-col-xs-12 mui-col-lg-12">
+			<p class="">In our community you can find people around the world who are learning languages, you can easily send a message or you can add a friend to stay in contact and learn languages together. And if you are looking a native speaker or people who learn the same language as you in your city just click location and meet each other in real life!</p>
+		</div>
+
+
+	</div><!-- /col -->
+	</div><!-- /mui-row -->
+	</div><!-- /mui-container -->
+	</section>
+	<!-- END BANNER -->
+
+
+	<div class="mui-container mobile-full--container">
+ 	<div class="mui-row mobile-full--row">
+	<div class="mui-col-xs-12 mobile-full--col">
+
+
+	<div class="community__search-icon-wrap">
+		<img class="community__search-icon" src="img/icons/ic_search.svg">
+		<span class="community__search-text">Search</span>
+	</div>
+
+	<section class="community__search mui-panel mui-panel--small">
+
+		<div class="mui-row">
+
+			
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+ 
+				  <div class="mui-textfield mui-textfield--float-label">
+				    <input type="email">
+				    <label class="community__search-input">Name</label>
+				  </div>
+ 
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Native</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Learning</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Level</option>
+				      <option>Novice</option>
+				      <option>Beginner</option>
+				      <option>Advanced</option>
+				      <option>Intermediate</option>
+				      <option>Expert</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Location</option>
+				      <option>Russia</option>
+				      <option>Poland</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>City Location</option>
+				      <option>Warsaw</option>
+				      <option>Leicester</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-1">
+ 			<div class="mui-textfield  mui-textfield--float-label">
+
+		    	<form class="mui-form">
+
+		    	<div class="mui-textfield  mui-textfield--float-label">
+				<div class="mui-checkbox" style="margin-top: 3px;">
+					<input id="online" type="checkbox" value="">
+					<label for="online">            
+						<span class="mui-checkbox-text">	
+						Online
+						</span>
+					</label>
+			    </div>
+				</div>
+
+ 				</form>
+
+ 			</div>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-2">
+			<div class="mui-textfield mui-textfield--float-label">
+				<form class="mui-form">
+				 	<button class="mui-btn mui-btn--primary">Apply Details</button>
+				</form>
+			</div>
+			</div>
+
+ 
+   		</div><!-- /mui-row -->
+
+	</section>
+	</div><!-- /col -->
+ 	</div><!-- /mui-row -->
+ 	</div><!-- /mui-container -->
+
+
+
+	<section class="members-group__wrap">
+ 	<div class="mui-container mobile-full--container">
+ 	<div class="mui-row mobile-full--row">
+	<div class="mui-col-xs-12 mobile-full--col">
+
+		<div class="mui-row mobile-full--row">
+
+
+			<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="https://odesk-prod-portraits.s3.amazonaws.com/Users:05d5dbad:PortraitUrl?AWSAccessKeyId=1XVAX3FNQZAFC9GJCFR2&Expires=2147483647&Signature=e2MH%2FDlJ%2BiqN3V7zh0vNvcqNhRc%3D&1497705543882189">
+
+					<div class="user-status user-status--online"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Maxim Degtyarenko
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAGFBMVEX////VKx4AOaZ6hsMAL6MAOahlNYXbKgcr/5qyAAAAiklEQVR4nO3PwQ2DAAwAsVCg7L8xS/A4RfYGngEAAAAAAAAAgI+cS8y1xPyWEKkRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqZl7ifkvMc8ScywhUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1LzAiQQdTHCVFliAAAAAElFTkSuQmCC"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAGFBMVEX////VKx4AOaZ6hsMAL6MAOahlNYXbKgcr/5qyAAAAiklEQVR4nO3PwQ2DAAwAsVCg7L8xS/A4RfYGngEAAAAAAAAAgI+cS8y1xPyWEKkRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqZl7ifkvMc8ScywhUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1LzAiQQdTHCVFliAAAAAElFTkSuQmCC">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+
+	 		<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="https://avatar.skype.com/v1/avatars/pshastov?auth_key=81174963&returnDefaultImage=false&cacheHeaders=true">
+
+					<div class="user-status user-status--offline"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Pavel Shastov
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAGFBMVEX////VKx4AOaZ6hsMAL6MAOahlNYXbKgcr/5qyAAAAiklEQVR4nO3PwQ2DAAwAsVCg7L8xS/A4RfYGngEAAAAAAAAAgI+cS8y1xPyWEKkRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqRGpEakRqZl7ifkvMc8ScywhUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1IjUiNSI1LzAiQQdTHCVFliAAAAAElFTkSuQmCC"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AkkbOKzcAjTl1tYrdfoPMFyenlKYQAAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+
+	 		<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="img/default/avatar_g.png">
+
+					<div class="user-status user-status--offline"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Jessica Smith
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="https://hannahmichaels.files.wordpress.com/2014/01/union-of-jacob-israel-flag.jpg"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AkkbOKzcAjTl1tYrdfoPMFyenlKYQAAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+
+
+	 		<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="img/default/avatar_big.png">
+
+					<div class="user-status user-status--online"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Jessica Smith
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="https://hannahmichaels.files.wordpress.com/2014/01/union-of-jacob-israel-flag.jpg"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AkkbOKzcAjTl1tYrdfoPMFyenlKYQAAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+
+
+	 		<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="img/default/avatar_big.png">
+
+					<div class="user-status user-status--online"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Jessica Smith
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="https://hannahmichaels.files.wordpress.com/2014/01/union-of-jacob-israel-flag.jpg"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AkkbOKzcAjTl1tYrdfoPMFyenlKYQAAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+
+
+	 		<!-- START USER -->
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-xl-6 mobile-full--col">
+	 		<article class="community-user mui-panel">
+
+
+	 			<!-- Start User Avatar -->
+	 			<a class="community-user__avatar" href="profile-view.html">
+				<div class="user-avatar-img--wrap">
+					<img class="user-avatar-img--community" src="img/default/avatar_big.png">
+
+					<div class="user-status user-status--offline"></div>
+				</div>
+				</a>
+				<!-- End User Avatar -->
+
+
+				<!-- Start User Content -->
+				<div class="community-user__profile-content">
+				<header class="community-user__header">
+	 			
+					<div class="community-user__profile-info">
+					<div class="community-user__profile-info--name">
+					<a href="profile-view.html">
+					<h2 class="community-user__name">
+						Jessica Smith
+					</h2>
+					</a>
+
+					<div class="community-user__user-language">
+						<span class="community-user__user-language--flag"><img class="community-user__user-language--flag" src="https://hannahmichaels.files.wordpress.com/2014/01/union-of-jacob-israel-flag.jpg"></span>
+					</div>
+					</div>
+
+					<ul class="star-ratings">
+					<div class="mui--clearfix">
+					<fieldset class="rating">
+				    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+				    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+				    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+				    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+				    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+				    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+				    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+				    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+				    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+				    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+					</ul>
+					</div>
+					
+				</header>
+
+				<section class="community-user__section ">
+					<p class="community-user__bio">Hey friends. I speak English fluently and I'm ready to help any one to learn English language</p>
+
+					<ul class="community-user__more-lang--wrap">
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHioqJEHbxDg189QH7AUAupQMa2xF7v83ccNIgYTv4lnbdeY1">
+						<div class="meter flag nostripes">
+							<span style="width: 40%"></span>
+						</div>
+						</li>
+						<li class="community-user__more-lang--item"><img class="community-user__more-lang--img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AkkbOKzcAjTl1tYrdfoPMFyenlKYQAAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=">
+						<div class="meter flag nostripes">
+							<span style="width: 70%"></span>
+						</div>
+						</li>
+					</ul>
+				</section>
+
+				<footer class="community-user__footer">
+					<a href="#">
+					<button class="mui-btn mui-btn--outline-primary mui-btn--card">Speak Online</button>
+					</a>
+				</footer>
+				</div><!-- /user-profile__content -->
+				<!-- End User Content -->
+
+	 		</article>
+	 		</div><!-- /col -->	
+	 		<!-- END USER -->
+ 
+
+ 
+ 
+
+ 
+
+
+				 
+
+
+ 		</div><!-- mui/row -->
+
+ 	</div><!-- /col -->
+ 	</div><!-- /mui-row -->
+ 	</div><!-- /mui-container -->
+ 	</section>
+
+
+
+
+
+
+<!-- FOOTER
+	================================================== -->
+	<footer class="site-footer" role="contentinfo">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<div class="site-footer__company-desc">
+               <a href="index.html" class="site-footer__logo">
+				<span class="logo--main" title="You'll Speak">You'll Speak</span>
+               </a>
+
+			<p class="site-footer__quote">Be careful about your dreams because most likey you will get it</p>
+			</div><!-- /company-desc -->
+
+               <div class="site-footer__support">
+               <span class="icon-envelope icon-envelope--main mui--pull-left" title="Envelope">Envelope</span>
+               support@youllspeak.com 
+               </div>
+
+          </div>
+          </div>
+          </div>
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<p class="site-footer__copyright">© 2017 You’ll speak. Все права защищены.</p>
+
+		</div>
+		</div>
+		</div>
+
+
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+
+</div><!-- /off-canvas-body -->
+     <!-- CORE JAVASCRIPT
+     ================================================== -->
+     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>

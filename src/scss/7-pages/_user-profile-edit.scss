@@ -1,0 +1,114 @@
+// ==========================================================================
+// #User Profile Edit
+// ==========================================================================
+
+.profile-edit {
+ 	&__upload-btn {
+ 		line-height: 2em;
+ 	}
+	&__upload-icon {
+		float: left;
+		margin-right: 10px;
+	}	
+
+	&__upload-text {
+		float: left;
+	}
+
+	&__field-group {
+		padding: 12px 0;
+	}
+
+	&__sidebar-content {
+		text-align: center;
+		@include media-query(medium) {
+			display: table;
+			text-align: unset;
+		}
+		@include media-query(large) {
+			text-align: center;
+			display: block;
+		}
+
+	}
+
+	&__sidebar-text {
+		@include media-query(medium) {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		@include media-query(large) {
+			display: block;
+		}
+	}
+
+	&__sidebar-img {
+		@include box(180px);
+		@include media-query(medium) {
+			@include box(80px);
+			margin: 0 auto;
+		}
+		@include media-query(medium) {
+			display: table-cell;
+			margin-right: 25px;
+		}
+		
+		@include media-query(large) {
+			@include box(180px);
+			margin-right: 0;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__sidebar-para {
+		margin: 0 0 10px;
+		@include media-query(large) {
+			margin: 25px 0;
+		}
+	}
+
+	&__about-text {
+		font-size: 14px;
+		color: rgba(0,0,0,0.87);
+		line-height: 24px;
+		margin: 20px 0;
+	}
+
+	&__span {
+		font-size: 12px;
+		color: #8B9399;
+		letter-spacing: 0;
+	}
+
+	&__add-lang {
+ 	    padding-top: 15px;
+		display: table-cell;
+		vertical-align: bottom;
+		 
+	}
+
+	&__manage-lang-item {
+		background: #F3F3F3;
+		border-radius: 2px;
+		@include box(32px);
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		&:first-child {
+			margin-right: 6px;
+		}
+	}
+	&__manage-lang-icon {
+		@include transform(translate(65%, -50%));
+		position: absolute;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    top: 50%;
+	}
+
+}
+
+
+

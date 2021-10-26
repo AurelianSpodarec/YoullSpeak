@@ -1,0 +1,125 @@
+// ==========================================================================
+// #Colors: Define Colors - use this http://chir.ag/projects/name-that-color/
+// ==========================================================================
+
+
+//Colors
+//===========================================================================
+$salem: #0E9D58;
+$jewel: #167F45; 
+
+$concrete: #F3F3F3;
+$mine-shaft: #262626;
+$monza: #da0606;
+$shamrock: #2FC87E;
+
+$black: #000000;
+$white: #FFF;
+
+
+
+//#Settings: General
+//===========================================================================
+
+//Main Colors
+$brand-color: $salem;
+
+$icon-notification-color: $monza; 
+
+
+// #Settings: Header
+// ==========================================================================
+$header-background: #157a42;
+$header-background--inverse: transparent;
+
+$hamburger-bar-color: $white;
+$hamburger-bar-color--active: $brand-color;
+
+$canvas-menu-border-top: $salem;
+$canvas-menu-background: $jewel;
+
+
+// #Settings: Footer
+// ==========================================================================
+$footer-background: $concrete;
+$footer-color: $mine-shaft;
+
+$footer--inverse-background: $jewel;
+$footer--inverse-background-border: $salem;
+$footer--inverse-quote-color: $white;
+$footer--inverse-support-color: $white;
+$footer--inverse-copyright-color: $concrete;
+
+
+// #Settings: Buttons
+// ==========================================================================
+$mui-btn--primary-color: $brand-color;
+$mui-btn--primary-color-hover: $brand-color;
+
+// Outline Primary
+$mui-btn--outline-primary-border: $brand-color;
+$mui-btn--outline-primary-color: $brand-color;
+$mui-btn--outline-primary-color-hover: $brand-color;
+$mui-btn--outline-primary-background: none;
+
+// Outline Snow
+$mui-btn--outline-snow-border: $white;
+$mui-btn--outline-snow-color: $white;
+$mui-btn--outline-snow-color-hover: $brand-color;
+$mui-btn--outline-snow-background: none;
+
+// Lang
+$mui-btn--lang-color: $white;
+$mui-btn--lang-color-hover: $shamrock;
+$mui-btn--lang-bg: $black;
+
+// Clean
+$mui-btn--clean-color: $white;
+$mui-btn--clean-color-hover: $white;
+$mui-btn--clean-bg: none;
+$mui-btn--clean-bg-hover: none;
+
+//Hover Drk
+$mui-btn--hover-drk-color: $white;
+$mui-btn--hover-drk-color-hover: $white;
+$mui-btn--hover-drk-color-active: $shamrock;
+
+// Card
+$mui-btn--card-color-hover: $white;
+$mui-btn--card-bg-hover: $jewel;
+$mui-btn--card-color-active: $white;
+$mui-btn--card-bg-active: $jewel;
+
+// Hover Gr
+$mui-btn--hover-gr-color-hover: $shamrock;
+
+// Create Group
+$mui-btn--create-group-bg: $white;
+$mui-btn--create-group-color: $jewel;
+$mui-btn--create-group-on-states: $brand-color;
+
+
+// #Settings: Modules
+// ==========================================================================
+
+// #Settings: Banner
+$banner-bg: 							$jewel;
+$banner-color: 							$white;
+
+$banner-inverse-bg: 					$concrete;
+$banner-inverse-color: 					rgba(38,38,38,0.87);
+
+$banner-title-color: 					$black;
+$banner-board-title-color: 				$salem;
+$banner-board-number-color: 			$salem;
+$banner-desc-color: 					rgba(38,38,38,0.87);
+
+
+//#Settings: Discussion
+$discussion-card-header-color: rgba(0,0,0,0.87);
+$discussion-card-content-bg-color: #f9f9f9;
+$discussion-card-user-list-bg-color: #f9f9f9;
+
+// #Settings: Star Rating
+$star-color-hover-previous: #F6A623;
+$star-color-current: #FFED85;

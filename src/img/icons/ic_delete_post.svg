@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_delete_post</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_View" transform="translate(-715.000000, -1240.000000)">
+            <g id="interactive-notification" transform="translate(495.000000, 1010.000000)">
+                <g id="reply" transform="translate(214.000000, 224.000000)">
+                    <g id="ic_delete_post">
+                        <polygon id="Shape" fill="#757575" transform="translate(12.000000, 12.000000) rotate(-315.000000) translate(-12.000000, -12.000000) " points="19 13 13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11"></polygon>
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

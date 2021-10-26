@@ -1,0 +1,66 @@
+// ==========================================================================
+// #Layouts
+// ==========================================================================
+//
+//	Table of Content
+//	
+//	- RTL/LTR
+//	- Container
+//
+
+// Change Directions - Right to Left/Left to Right
+.rtl {
+	&--lg {
+		@include media-query(large) {
+			direction: rtl;
+		}
+	}
+}
+.ltr {
+	&--lg {
+		@include media_query(large) {
+			direction: ltr;
+		}
+	}
+}
+
+.mui-container--full-mobile {
+	padding-left: 0;
+	padding-right: 0;
+	@include media-query(medium) {
+	    padding-left: 25px;
+	    padding-right: 25px;
+	}
+}
+
+//Mui Container
+.mui-container, .mui-container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include media-query(medium) {
+   	padding-left: 25px;
+    padding-right: 25px;
+    }
+    @include media-query(large) {
+   	padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+@media (min-width: 591px) and (max-width: 769px) {
+	.mui-container {
+		max-width: 776px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.mui-container {
+	       max-width: 800px;
+	}
+}
+
+
+
+ 

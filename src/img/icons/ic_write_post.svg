@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_write_post</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_tablet" transform="translate(-56.000000, -819.000000)">
+            <g id="clear-copy" transform="translate(40.000000, 811.000000)">
+                <g id="ic_write_post" transform="translate(8.000000, 0.000000)">
+                    <rect id="text-field-icon-bounds" x="0" y="0" width="48" height="48"></rect>
+                    <rect id="icon-bounds" x="12" y="12" width="24" height="24"></rect>
+                    <path d="M22,32 L14,40 L14,32 L8,32 L8,8 L40,8 L40,32 L22,32 Z M14,16 L14,18 L34,18 L34,16 L14,16 Z M14,22 L14,24 L26,24 L26,22 L14,22 Z" id="icon" fill="#167F45"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

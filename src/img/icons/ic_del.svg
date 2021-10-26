@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_del</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_Edit_tablet-Copy" transform="translate(-639.000000, -587.000000)">
+            <g id="Group-2" transform="translate(630.000000, 580.000000)">
+                <g id="ic_del" transform="translate(4.000000, 4.000000)">
+                    <g id="Icon-24px">
+                        <path d="M17.999,7.001 L5.999,7.001 L5.999,19.001 C5.999,20.105 6.895,21.001 8,21.001 L15.999,21.001 C17.105,21.001 17.999,20.105 17.999,19.001 L17.999,7.001 M14.499,3 L9.499,3 L8.5,4.001 L5.999,4.001 C5.448,4.001 5,4.449 5,5 L5,6.001 L19,6.001 L19,5 C19,4.449 18.552,4.001 17.999,4.001 L15.5,4.001 L14.499,3" id="Fill-3" fill="#000000"></path>
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

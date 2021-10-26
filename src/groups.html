@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta, Title, Styles, Scripts 
+	================================================== -->
+	<meta name="charset" content="UTF-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width" />
+	<title>You'll Speak</title>
+
+	<link rel="stylesheet" type="text/css" href="css/app.min.css">
+
+</head>
+<body>
+<div class="off-canvas--body">
+
+	<!-- HEADER
+	================================================== -->
+	<header class="site-header mui--clearfix" role="banner">
+	<div class="site-header__inner mui--clearfix">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+ 
+               <div class="nav-wrap">
+     	
+
+     		<!-- Start Head -->
+			<div class="site-header__head">
+	          <a href="index.html">
+				<div class="logo--main" title="You'll Speak">You'll Speak</div>
+	          </a>
+			</div>
+			<!-- End Head -->
+
+
+			<!-- Start Hamburger -->
+			<button class="site-header__hamburger mui--clearfix">
+			<span class="site-header__hamburger--bar"></span>
+			</button>
+			<!-- End Hamburger -->
+
+
+			<!-- Start Login/Signin -->
+               <ul class="site-header__login-sign">
+               <!-- <li class="nav__item nav__item--login">
+               	<a href="#" class="mui-btn mui-btn--outline-snow">Log In</a>
+               </li>
+               <li class="nav__item">
+               	<a href="#" class="mui-btn mui-btn--primary">Sign Up</a>
+               </li> -->
+
+               <div class="loged-in-header">
+               <span class="site-header__icon-message">
+				<object style="margin-bottom: 12px;" data="img/icons/ic_local_post_office.svg" type="image/svg+xml">
+				<img src="img/icons/ic_local_post_office.svg" />
+				</object>
+
+				<span class="site-header__icon-notification"></span>
+			</span>
+            
+               <div class="mui-dropdown">
+			  <button class="nav-avatar-btn" data-mui-toggle="dropdown">
+			     <img style="margin-left: 15px;" src="img/test/desktop-avatar.png" alt="User Avatar">
+			     <span class="nav-avatar-arrow mui-caret"></span>
+			  </button>
+			  <ul class="mui-dropdown__menu nav__avatar-dropdown">
+			    <li><a href="profile-view.html">My Profile</a></li>
+			    <li><a href="profile-messages.html">My Messages</a></li>
+			    <li><a href="community.html">My Friends</a></li>
+			    <li><a href="index.html">Log Out</a></li>
+			  </ul>
+			</div>
+			</div>
+               </ul>
+               <!-- Stop Login/Signin -->
+
+
+               <!-- START NAVIGATION -->
+               <nav role="navigation">
+
+
+               <!-- Mobile View -->
+			<ul class="nav-mobile mui--clearfix">
+			<li class="mui-dropdown">
+				<button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+				EN
+				<span class="mui-caret"></span>
+				</button>
+				<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+				</ul>
+			</li>
+			</ul><!-- /mobile-nav -->
+
+
+			<!-- Tablet View -->
+               <ul class="nav-tablet mui--clearfix">
+			<li class="nav__item">
+			<div class="mui-dropdown">
+			<button class="nav__Link mui-btn mui-btn--lang mui-btn--no-pd " data-mui-toggle="dropdown">
+	          <span class="nav__icon-public">
+				<object class="icon-public" data="img/icons/ic_public.svg" type="image/svg+xml">
+				<img class="icon-public" src="img/icons/ic_public.svg" />
+				</object>
+			</span>
+			ENGLISH
+			<span class="mui-caret"></span>
+			</button>
+			<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+			</ul>
+			</div>
+			</li>
+               </ul>
+
+			<!-- Desktop View -->
+               <ul class="nav-desktop mui--clearfix">
+               <li class="nav__item">
+               <div class="mui-dropdown">
+                    <button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+                    Choose a Language
+                    <span class="mui-caret"></span>
+                    </button>
+                    <ul class="mui-dropdown__menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">Polish</a></li>
+                    </ul>
+               </div>
+               </li><!-- /lang -->
+               <li class="nav__item">
+                    <a href="community.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Members of community</a>
+               </li>
+               <li class="nav__item">
+                    <a href="groups.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Group Talks</a>
+               </li>
+			</ul><!-- /desktop-nav -->
+
+
+               </nav>
+               </div><!-- /nav-wrap -->
+               <!-- END NAVIGATION -->
+
+ 
+		</div><!-- /mui-col -->
+		</div><!-- /row --> 
+		</div><!-- /mui-container -->
+
+
+		<!-- START OFF CANVAS MENU -->
+		<nav class="canvas-menu" role="navigation">
+		<ul class="canvas-menu__list">
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Login</a>
+			</li>
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Sign Up</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="community.html">Members of Community</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="friends.html">Friends</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-view.html">Profile</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon canvas--icon-message">
+
+					<object style="margin-bottom: 10px;" data="img/icons/ic_insert_comment.svg" type="image/svg+xml">
+					<img src="img/icons/ic_insert_comment.svg" />
+					</object>
+
+					<span class="canvas--icon-notification"></span>
+					
+				</span>
+				<a class="canvas-menu__link" href="messages.html">Messages</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="groups.html">Group talks</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-edit.html">Edit profile</a>
+			</li>
+		</ul>
+		</nav>
+		<!-- END OFF CANVAS MENU -->
+
+
+	</div><!-- /site-header-inner -->
+	</header>
+ 	<!-- END SITE HEADER -->
+
+
+
+	<!-- BANNER -->
+ 	<section class="banner banner__groups">
+	<div class="mui-container">
+	<div class="mui-row">
+	<div class="mui-col-xs-12">
+		 
+
+		<div class="mui-row">
+		<div class="mui-col-xs-12 mui-col-lg-12">
+
+			<div class="banner__board">
+				<span class="banner__board--number">702</span>
+				<span class="banner__board--title">Online Speakers</span>
+			</div>
+
+			<div class="banner__board">
+				<span class="banner__board--number">18</span>
+				<span class="banner__board--title">Group talks</span>
+			</div>
+
+		</div><!-- /mui-col -->
+		</div><!-- /mui-row -->
+
+
+	 	<div class="mui-row">
+		<div class="mui-col-xs-12 mui-col-lg-9">
+			<h2 class="banner__desc banner__desc--group">If you are ready to speak with people right now for free just join a group or create your own group where you can invite your friends and enjoy practicing foreign languages with people around the world</h2>
+		</div>
+
+		<div class="mui-col-xs-12 mui-col-lg-3">
+			<button class="mui-btn mui-btn--create-group" onclick="createGroupModal()">
+			<img class="banner__create-btn-img" src="../img/icons/ic_add_group.svg">Create a Group
+			</button>
+		</div>
+		</div><!-- /mui-row -->
+
+
+	</div><!-- /col -->
+	</div><!-- /mui-row -->
+	</div><!-- /mui-container -->
+	</section>
+	<!-- END BANNER -->
+
+
+	<section class="discussion__wrap">
+ 	<div class="mui-container mobile-full--container">
+ 	<div class="mui-row mobile-full--row">
+	<div class="mui-col-xs-12 mobile-full--col">
+
+		<!--START DISCUSSION CARD -->
+ 		<article class="discussion-card card-panel [ mui-panel mui-panel--clean ] ">
+
+		<header class="discussion-card__header mui--clearfix">
+		<div class="mui-panel--inside-medium mui--clearfix">
+
+			<div class="discussion-card__header-info--topic">
+				<h2 class="discussion-card__header-info--title">English</h2>
+				<span class="discussion-card__header-info--text">Pre-Intermediate</span>
+			</div>
+
+			<div class="discussion-card__header-info--created-by">
+				<p class="discussion-card__header-info--created-name">Created by</p>
+				<div class="discussion-card__header-info--created-wrap">
+				<a href="profile-view.html">
+				<img class="discussion-card__header-info--created-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				</a>
+				<div class="discussion-card__header-info--created-status user-status--offline"></div>
+				</div>
+			</div>
+
+		</div>
+		</header><!-- /discussion-card-header -->
+
+		<section class="discussion-card__content mui--clearfix">
+
+			<ul class="discussion-card__user-list">
+			<div class="discussion-card__user-list--inner">
+				<li class="discussion-card__user">
+				<a href="profile-view.html">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</a>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--online"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_g.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+
+				<li class="discussion-card__user discussion-card__add-user">
+				<img class="discussion-card__add-user-icon" src="img/icons/ic_connect.svg" alt="User Avatar">
+				</li>
+			</div>
+			</ul><!-- /discussion-card__general-users -->
+
+			<div class="discussion-card__join">
+			<div class="discussion-card__join--inner">
+				<span class="">
+				<img class="discussion-card__join-icon" src="img/icons/ic_share.svg">
+				</span>
+				<button class="discussion-card__join-btn [ mui-btn mui-btn--primary ]">Join</button>
+			</div>
+			</div><!-- /discussions__user-wrap -->
+
+		</section><!-- /groups-users -->
+
+ 		</article><!-- /panel -->
+ 		<!-- END DISCUSSION CARD -->
+
+
+		<!--START DISCUSSION CARD -->
+ 		<article class="discussion-card card-panel [ mui-panel mui-panel--clean ] ">
+
+		<header class="discussion-card__header mui--clearfix">
+		<div class="mui-panel--inside-medium mui--clearfix">
+
+			<div class="discussion-card__header-info--topic">
+				<h2 class="discussion-card__header-info--title">Russian</h2>
+				<span class="discussion-card__header-info--text">Advanced</span>
+			</div>
+
+			<div class="discussion-card__header-info--created-by">
+				<p class="discussion-card__header-info--created-name">Created by</p>
+				<div class="discussion-card__header-info--created-wrap">
+				<img class="discussion-card__header-info--created-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__header-info--created-status user-status--online"></div>
+				</div>
+			</div>
+
+		</div>
+		</header><!-- /discussion-card-header -->
+
+		<section class="discussion-card__content mui--clearfix">
+
+			<ul class="discussion-card__user-list">
+			<div class="discussion-card__user-list--inner">
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--online"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--online"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+			</div>
+			</ul><!-- /discussion-card__general-users -->
+
+			<div class="discussion-card__join">
+			<div class="discussion-card__join--inner">
+				<span class="">
+				<img class="discussion-card__join-icon" src="img/icons/ic_share.svg">
+				</span>
+				<button class="discussion-card__join-btn [ mui-btn mui-btn--primary ]">Join</button>
+			</div>
+			</div><!-- /discussions__user-wrap -->
+
+		</section><!-- /groups-users -->
+
+ 		</article><!-- /panel -->
+ 		<!-- END DISCUSSION CARD -->
+
+
+		<!--START DISCUSSION CARD -->
+ 		<article class="discussion-card card-panel [ mui-panel mui-panel--clean ] ">
+
+		<header class="discussion-card__header mui--clearfix">
+		<div class="mui-panel--inside-medium mui--clearfix">
+
+			<div class="discussion-card__header-info--topic">
+				<h2 class="discussion-card__header-info--title">Italian</h2>
+				<span class="discussion-card__header-info--text">Beginner</span>
+			</div>
+
+			<div class="discussion-card__header-info--created-by">
+				<p class="discussion-card__header-info--created-name">Created by</p>
+				<div class="discussion-card__header-info--created-wrap">
+				<img class="discussion-card__header-info--created-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__header-info--created-status user-status--online"></div>
+				</div>
+			</div>
+
+		</div>
+		</header><!-- /discussion-card-header -->
+
+		<section class="discussion-card__content mui--clearfix">
+
+			<ul class="discussion-card__user-list">
+			<div class="discussion-card__user-list--inner">
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--online"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+			</div>
+			</ul><!-- /discussion-card__general-users -->
+
+			<div class="discussion-card__join">
+			<div class="discussion-card__join--inner">
+				<span class="">
+				<img class="discussion-card__join-icon" src="img/icons/ic_share.svg">
+				</span>
+				<button class="discussion-card__join-btn [ mui-btn mui-btn--primary ]">Join</button>
+			</div>
+			</div><!-- /discussions__user-wrap -->
+
+		</section><!-- /groups-users -->
+
+ 		</article><!-- /panel -->
+ 		<!-- END DISCUSSION CARD -->
+
+ 
+		<!--START DISCUSSION CARD -->
+ 		<article class="discussion-card card-panel [ mui-panel mui-panel--clean ] ">
+
+		<header class="discussion-card__header mui--clearfix">
+		<div class="mui-panel--inside-medium mui--clearfix">
+
+			<div class="discussion-card__header-info--topic">
+				<h2 class="discussion-card__header-info--title">Polish</h2>
+				<span class="discussion-card__header-info--text">Novice</span>
+			</div>
+
+			<div class="discussion-card__header-info--created-by">
+				<p class="discussion-card__header-info--created-name">Created by</p>
+				<div class="discussion-card__header-info--created-wrap">
+				<img class="discussion-card__header-info--created-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__header-info--created-status user-status--offline"></div>
+				</div>
+			</div>
+
+		</div>
+		</header><!-- /discussion-card-header -->
+
+		<section class="discussion-card__content mui--clearfix">
+
+			<ul class="discussion-card__user-list">
+			<div class="discussion-card__user-list--inner">
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--online"></div>
+				</li>
+
+				<li class="discussion-card__user">
+				<img class="discussion-card__user-avatar--offline" src="img/default/avatar_big.png" alt="User Avatar">
+				<div class="discussion-card__user-status user-status--offline"></div>
+				</li>
+			</div>
+			</ul><!-- /discussion-card__general-users -->
+
+			<div class="discussion-card__join">
+			<div class="discussion-card__join--inner">
+				<span class="">
+				<img class="discussion-card__join-icon" src="img/icons/ic_share.svg">
+				</span>
+				<button class="discussion-card__join-btn [ mui-btn mui-btn--primary ]">Join</button>
+			</div>
+			</div><!-- /discussions__user-wrap -->
+
+		</section><!-- /groups-users -->
+
+ 		</article><!-- /panel -->
+ 		<!-- END DISCUSSION CARD -->
+
+
+ 	</div><!-- /col -->
+ 	</div><!-- /mui-row -->
+ 	</div><!-- /mui-container -->
+ 	</section>
+
+
+
+	<!-- FOOTER
+	================================================== -->
+	<footer class="site-footer" role="contentinfo">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<div class="site-footer__company-desc">
+               <a href="index.html" class="site-footer__logo">
+				<span class="logo--main" title="You'll Speak">You'll Speak</span>
+               </a>
+
+			<p class="site-footer__quote">Be careful about your dreams because most likey you will get it</p>
+			</div><!-- /company-desc -->
+
+               <div class="site-footer__support">
+               <span class="icon-envelope icon-envelope--main mui--pull-left" title="Envelope">Envelope</span>
+               support@youllspeak.com 
+               </div>
+
+          </div>
+          </div>
+          </div>
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<p class="site-footer__copyright">© 2017 You’ll speak. Все права защищены.</p>
+
+		</div>
+		</div>
+		</div>
+
+
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+	<!-- MODAL ONLY FOR GROUPS PAGE
+	================================================== -->
+	<div id="create-group__form" class="mui-panel">
+	<form class="mui-form">
+
+		<legend class="group-create__title">Greate a Group</legend>
+		<div class="mui-select">
+			<select>
+			<option>Language</option>
+			<option>Russian</option>
+			<option>Italian</option>
+			<option>German</option>
+			</select>
+		</div>
+
+		<div class="mui-select">
+			<select>
+			<option>Level</option>
+			<option>Novice</option>
+			<option>Beginner</option>
+			<option>Advanced</option>
+			<option>Intermediate</option>
+			</select>
+		</div>
+
+		<div class="mui-textfield mui-textfield--float-label">
+			<input type="text" class="mui--is-empty mui--is-untouched mui--is-pristine">
+			<label>Member Name</label>
+		</div>
+
+		<div class="groups__modal-btn-wrap">
+		<a class="groups__modal-btn" href="#">Canel</a>
+		<a class="groups__modal-btn" href="#">Create</a>
+		</div>
+
+	</form>
+	</div>
+ 
+	  <style type="text/css">
+			#create-group__form {
+		    display: none;
+		}
+	  	</style>
+
+</div><!-- /off-canvas-body -->
+
+     <!-- CORE JAVASCRIPT
+     ================================================== -->
+     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+	    function createGroupModal() {
+	    // initialize modal element
+	    const element = document.getElementById('create-group__form');
+	    let modalEl = element.cloneNode(true);
+	    modalEl.style.display = 'block';
+	    //modalEl.style.width = '375px';
+	    modalEl.style.height = '320px';
+	    modalEl.style.margin = '100px auto';
+	    modalEl.style.backgroundColor = '#fff';
+
+	    // show modal
+	    mui.overlay('on', modalEl);
+	  }
+</script>
+
+ 
+ 
+</body>
+</html>

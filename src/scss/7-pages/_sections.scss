@@ -1,0 +1,45 @@
+// ==========================================================================
+// #Section
+// ==========================================================================
+
+
+.section {
+	position: relative; 
+	width: 100%; 
+	background-size: cover; 
+	background-position: center center;
+	border-bottom: 8px solid $brand-color;
+	&__height {
+		min-height: 592px;
+		@include media-query(medium) {
+			position: relative; // live it here
+			min-height: 578px;
+		}
+		@include media-query(x-large) {
+			min-height: 905px;
+		}
+	}
+
+	// Images
+	&--1 {
+ 		background-image: url('../img/landing-sections/sec-1.png');
+		//@include retina('../img/landing-sections/retina-sec-1.png', auto, auto);
+	}
+
+	&--2 {
+		background-image: url('../img/landing-sections/sec-2.png');
+		//@include retina('../img/landing-sections/retina-sec-2.png', auto, auto);
+	}
+
+	&--3 {
+		background-image: url('../img/landing-sections/sec-3.png');
+		//@include retina('../img/landing-sections/retina-sec-3.png', auto, auto);
+	}
+
+	&--4 {
+		background-image: url('../img/landing-sections/sec-4.png');
+		//@include retina('../img/landing-sections/retina-sec-4.png', auto, auto);
+	}
+
+
+}

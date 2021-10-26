@@ -1,0 +1,51 @@
+// ==========================================================================
+// #User Avatar
+// ==========================================================================
+
+
+%user-avatar-img {
+	position: relative;
+	@include border-radius(50%);
+}
+
+.user-avatar-img {
+	@extend %user-avatar-img;
+	@include box(56px);
+	// Wrap
+	&--wrap {
+		position: relative;
+		@include border-radius(50%);	 
+	}
+
+	//Community
+	&--community {
+		@extend %user-avatar-img;
+		@include box(59px);
+
+		@include media-query(medium) {
+			@include box(180px);
+		}
+
+		@include media-query(large) {
+			@include box(180px);
+		}
+	}//community
+
+	// Groups 
+	@include media-query(medium) {
+		@include box(120px);
+	}
+
+	@include media-query(large) {
+		@include box(180px);
+	}
+
+	&--groups {
+		@extend %user-avatar-img;
+		@include box(56px);
+	}
+	&--comments {
+		@extend %user-avatar-img;
+		@include box(40px);
+	}
+}

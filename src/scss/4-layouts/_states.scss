@@ -1,0 +1,164 @@
+// ==========================================================================
+// #States
+// ==========================================================================
+
+
+
+// SHOW
+// ==========================================================================
+
+.show-mobile {
+	&--up {
+		@media only screen and (min-width: $small) {
+			display: block;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $small) {
+			display: block;
+		}
+	}
+}
+
+.show-tablet {
+	&--up {
+		@media only screen and (min-width: $medium) {
+			display: block;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $medium) {
+			display: block;
+		}
+	}
+}
+
+.show-desktop {
+	&--up {
+		@media only screen and (min-width: $large) {
+			display: block;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $large) {
+			display: block;
+		}
+	}
+}
+
+.show-desktop-lg {
+	&--up {
+		@media only screen and (min-width: $x-large) {
+			display: block;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $x-large) {
+			display: block;
+		}
+	}
+}
+
+
+
+// HIDE
+// ==========================================================================
+.hide-mobile {
+	&--up {
+		@media only screen and (min-width: $small) {
+			display: none;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $small) {
+			display: none;
+		}
+	}
+}
+
+.hide-tablet {
+	&--up {
+		@media only screen and (min-width: $medium) {
+			display: none;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $large) {
+			display: none;
+		}
+	}
+}
+
+.hide-desktop {
+	display: block;
+	&--up {
+		@media only screen and (min-width: $large) {
+			display: none;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $x-large) {
+			display: none;
+		}
+	}
+}
+
+.hide-desktop-lg {
+	display: block;
+	&--up {
+		@media only screen and (min-width: $x-large) {
+			display: none;
+		}
+	}
+	&--below{
+		@media only screen and (max-width: $x-large) {
+			display: none;
+		}
+	}
+}
+
+
+// Full Mobile; Remove Padding/Margin from Container, row and col
+// ======================================================================
+.mobile-full {
+
+	
+	 	
+		&--container {
+			@media only screen and (max-width: $small) {
+				padding: 0;
+			}
+		}
+
+		&--row {
+			@media only screen and (max-width: $small) {
+				margin: 0;
+			}
+		}
+
+		&--col {
+			@media only screen and (max-width: $small) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+	
+
+}
+
+
+// Is Desktop
+.is-desktop {
+	&--show {
+		display: none;
+		@include media-query(x-large) {
+			display: block;
+		}
+	}	
+	&--hide {
+		@include media-query(x-large) {
+			display: none;
+		}
+	}
+}

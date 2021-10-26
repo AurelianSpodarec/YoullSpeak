@@ -1,0 +1,44 @@
+// ==========================================================================
+// #Settings
+// ==========================================================================
+//
+//	Table of Contents:
+//
+//	- Fonts
+//	- Global Settings
+//	- Navigation
+//
+
+
+
+// #Settings: Fonts
+// ==========================================================================
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+	$primary-font:					'Roboto', 'Helvetica', 'Arial', sans-serif;
+	$secondary-font:				sans-serif;
+
+	$font-weight-light: 			300;
+	$font-weight-medium:			400;
+	$font-weight-regular:			500;
+	$font-weight-bold:				bold;
+ 	
+
+// #Settings: Global Settings
+// ==========================================================================
+
+	$base-font-family: 					$primary-font;
+	$base-font-weight:					$font-weight-light;
+	$base-line-height:					24px;
+	$base-background:					$concrete;
+
+
+// #Settings: Button
+// ==========================================================================
+
+$mui-btn-glow-bg-color:              	transparent !default;
+$mui-btn-glow-bg-color-hover:		 	darken(white , 5%) !default;
+$mui-btn-glow-white-color:           	darken(white , 35%) !default;
+
+$mui-form-border-color:					$brand-color;
+$mui-form-text-color:					$brand-color;

@@ -1,0 +1,189 @@
+// ==========================================================================
+// #Layouts Extends
+// ==========================================================================
+//
+//	Table of Content
+//	
+//	- Site Header
+//	- Site footer
+//
+
+
+// #Layouts: Site Header
+// ==========================================================================
+
+%header--fixed-top {
+	@include fixed(top 0);
+	z-index: 9997;
+	width: 100%;
+}
+
+%header {
+	background: $header-background;
+}
+
+%header-inner {
+	padding: 19px 0px 8px;
+}
+
+%header--inverse-inner {
+	@include transition(.2s ease-in-out);
+	border-top: 0px solid;
+	background-color: $header-background--inverse; 
+	&.is-active {
+ 		background-color: rgba($header-background--inverse, .30);
+	}
+}
+ 
+%header-head {
+ 	float: left;
+	@include accessibility-text();
+	margin-right: 20px;
+	z-index: 5;
+}
+
+%header-login-sign {
+	display: none;
+	float: right;
+	z-index: 20;
+	@include media-query(medium) {
+		display: block;
+		position: relative;
+		top: -4px;
+	}
+}
+
+//Hamburger
+%header-hamburger {
+	z-index: 9999;
+    float: right;
+	line-height: 40px;
+    border: none;
+    background: none;
+    @include relative(top 0);
+    @include box(40px);	
+    @include border-radius(2px);
+    
+	@include media-query(medium) {
+	    margin-left: 20px;
+	}
+	@include media-query(x-large) {
+		display: none;
+	}
+}
+%header-hamburger--active {
+	@include media-query(medium) {
+		background: $hamburger-bar-color--active;
+	}
+}
+
+//Hamburger Bars
+%header-hamburger-bar {
+	&,		
+	&:before,
+	&:after {
+	@include absolute(right 25% left 24%);
+    @include transition(all .2s linear);
+    @include border-radius(4px);
+    height: 2px;
+    margin-top: -2px;
+    background: $hamburger-bar-color;
+	}
+	&:before,
+	&:after {
+	    content: " ";
+	    width: 100%;
+		left: 0%;
+	}
+	&:before {
+	    top: -4px;
+	}
+	&:after {
+		bottom: -6px;
+	}
+}
+
+%header-hamburger-bar--active {
+	&,
+	&:before,
+	&:after {
+	    height: 3px;
+	}
+	& {
+		background-color: rgba(255, 8, 8, 0);
+	}
+	&:before,
+	&:after {
+		top: 3px;
+	    left: 0%;
+	    right: 24%;
+	    width: 21px;
+	    transition: background 300ms 0s ease,transform 300ms 0.2s ease, top 300ms 0s ease, bottom 300ms 0s ease;
+	}
+	&:before { 
+		@include transform(rotate(45deg));
+	}
+	&:after {
+	    @include transform(rotate(-45deg));
+	}
+}
+
+
+
+
+
+// #Layouts: Site Footer
+// ==========================================================================
+%site-footer {
+	position: relative;
+	z-index: 20;
+	padding: 35px 0 22px 0;
+}
+
+%site-footer-desc {
+	@include media-query(medium) {
+		float: left;
+	}
+}
+
+%site-footer-logo {
+	margin-bottom: 11px;
+
+	@include media-query(medium) {
+		float: left;
+		margin-right: 50px;
+		margin-bottom: unset;
+	}
+}
+
+%site-footer-quote {
+	font-size: 16px;
+	font-weight: $font-weight-light;
+	margin-top: 15px;
+
+	@include media-query(medium) {
+		float: left;
+		max-width: 270px;
+	    line-height: 24px;
+	    margin-top: -3px;
+	}
+}
+
+%site-footer-support {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 19px 0 29px 0;
+
+	@include media-query(medium) {
+		float: right;
+		margin: unset;
+	}
+}
+
+%site-footer-copyright {
+	font-weight: $font-weight-light;
+
+	@include media-query(medium) {
+		margin-top: 24px;
+	}
+}

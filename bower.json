@@ -1,0 +1,17 @@
+{
+  "name": "youllspeak",
+  "description": "You'll Speak Website",
+  "main": "index.js",
+  "authors": [
+    "Aurelian Spodarec http://aurelianspodarec.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

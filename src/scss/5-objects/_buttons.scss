@@ -1,0 +1,176 @@
+// ==========================================================================
+// #Buttons
+// ==========================================================================
+
+
+
+%mui-btn {
+    padding: 0 15px;
+    font-weight: $font-weight-medium;
+}
+
+.mui-btn {
+
+    &--primary {
+        @extend %mui-btn;
+        background: $mui-btn--primary-color;
+        &:active,
+        &:focus,
+        &:hover {
+            background: lighten($mui-btn--primary-color-hover, 7%);
+        }
+    }
+
+    &--outline-primary {
+        @extend %mui-btn;
+        border: 2px solid $mui-btn--outline-primary-border;
+        @include border-radius(2px);
+        background: $mui-btn--outline-primary-background;
+        color: $mui-btn--outline-primary-color;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $mui-btn--outline-primary-color-hover;
+        }
+    }
+
+    &--outline-snow {
+        @extend %mui-btn;
+        line-height: 2.4em;
+        border: 2px solid $mui-btn--outline-snow-border;
+        @include border-radius(2px);
+        background: $mui-btn--outline-snow-background;
+        color: $mui-btn--outline-snow-color;
+        &:hover,
+        &:active,
+        &:focus {
+            color:  $mui-btn--outline-snow-color-hover;
+        }
+    }
+
+    &--lang {
+        @extend %mui-btn;
+        background: none;
+        box-shadow: none;
+        border: 0;
+        color: $mui-btn--lang-color;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 2.5em;
+        margin-left: -3px;
+        padding: 0 7px;
+        text-shadow: 0 1px 2px rgba($black, 0.50);
+        &:active,
+        &:focus,
+        &:hover {
+            background: rgba($mui-btn--lang-bg, 0.20);
+            @include border-radius(2px);
+            box-shadow: none;
+            border: 0;
+            color: $mui-btn--lang-color-hover;
+        }
+    }
+
+    &--clean {
+        @extend %mui-btn;
+        background: $mui-btn--clean-bg;
+        box-shadow: none;
+        border: 0;
+        color: $mui-btn--clean-color;
+        &:active,
+        &:focus,
+        &:hover {
+            background: $mui-btn--clean-bg-hover;
+            box-shadow: none;
+            border: 0;
+            color: $mui-btn--clean-color-hover;
+        }
+    }
+
+    &--hover-drk {
+        @extend %mui-btn;
+        color: $mui-btn--hover-drk-color;
+        &:hover {
+            background: rgba(0,0,0,0.2);
+            color: $mui-btn--hover-drk-color-hover;
+        }
+        &:active {
+            font-size: 14px;
+            color: $mui-btn--hover-drk-color-active;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 2px rgba($black, 0.50);
+
+        }
+    }
+
+    &--card {
+        line-height: 2.4em;
+        &:hover {
+            background: $mui-btn--card-bg-hover;
+            color: $mui-btn--card-color-hover;
+        }
+        &:active {
+            background: $mui-btn--card-bg-active;
+            color: $mui-btn--card-color-active;
+        }
+    }
+
+    &--hover-gr {
+        @extend %mui-btn;
+        &:hover {
+            color: $mui-btn--hover-gr-color-hover;
+        }
+    }
+
+    &--no-pd {
+        @extend %mui-btn;
+        padding: 0;
+    }
+
+    &--create-group {
+        background: $mui-btn--create-group-bg;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+        font-size: 16px;
+        height: 50px;
+        color: $mui-btn--create-group-color;
+        letter-spacing: 0.57px;
+        font-weight: $font-weight-regular;
+        
+        @include media-query(medium) {
+            float: left;
+            margin-top: unset;
+        }
+        @include media-query(large) {
+            margin-top: 20px;
+            float: right;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            color: $mui-btn--create-group-on-states;
+        }
+    }
+
+    // Helper for buttons
+    &--mobile-lang {
+        @media only screen and (max-width: 380px) {
+        padding: 0;
+        }
+    }
+
+    &--upload-photo {
+        background: #FFFFFF;
+        background: rgba(153,153,153,0.10);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    }
+
+    &--primary-nobg {
+        color: $brand-color;
+    }
+
+}   
+
+ 
+ 
+
+ 

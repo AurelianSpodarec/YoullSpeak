@@ -1,0 +1,75 @@
+// ==========================================================================
+// #Ban Modal
+// ==========================================================================
+
+
+.ban-modal {
+	display: none;
+	width: 80%;
+	height: auto!important;
+	border-radius: 10px;
+
+	&__inner {
+		padding: 20px;
+		position: relative;
+	}
+	&__users {
+		max-height: 400px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		&::-webkit-scrollbar {
+		    width: 12px;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		    border-radius: 10px;
+		}
+		 
+		&::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		}
+	}
+	&__row {
+		display: table;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 25px;
+		font-weight: 500;
+
+	}
+	&__collumn {
+		@include media-query(large) {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 30px;
+		}
+	}
+ 	&__close-icon {
+ 		@include absolute(right 0);
+ 	}
+	&__user-avatar {
+		border-radius: 50%;
+		@include box(70px);
+		@include media-query(medium) {
+				@include box(130px);
+		}
+	}
+ 	&__input-complain {
+ 		width: 100%;
+ 	}
+	&__btn-anchor {
+		color: green;
+		&:hover {
+			color: white;
+		}
+	}
+	&__btn-ban:hover .ban-modal__btn-anchor{
+		color: white;
+	}
+ 
+}

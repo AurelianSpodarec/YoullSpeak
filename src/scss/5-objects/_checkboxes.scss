@@ -1,0 +1,98 @@
+// ==========================================================================
+// #Checkboxes
+// ==========================================================================
+
+
+.mui-radio,
+.mui-checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mui-radio input,
+.mui-checkbox input{
+  display: none
+}
+
+.mui-radio > label,
+.mui-checkbox > label {
+  min-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.mui-checkbox > label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    text-indent: 10px;
+    cursor: pointer;
+    border: 2px solid #666;
+    border-radius: 2px;
+}
+
+.mui-checkbox input[type=checkbox]:disabled+label{
+   border: 2px solid #999;
+}
+
+.mui-checkbox input[type=checkbox]:checked+label{
+  background-color:#009688;
+   border-color:#009688;
+}
+
+    .mui-checkbox input[type=checkbox]:checked + label::after,
+    .mui-checkbox input[type=checkbox]:checked + label::before {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        display: table;
+        content: '';
+    }
+
+    .mui-checkbox input[type=checkbox]:checked + label::before {
+        border-color: #fff;
+        background-color: #63c000;
+        border-radius: 35px;
+        right: -13px;
+        top: -13px;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        -moz-animation: riple 800ms;
+        -o-animation: riple 800ms;
+        -webkit-animation: riple 800ms;
+        animation: riple 800ms;
+    }
+.mui-checkbox input[type=checkbox]:checked + label::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    @include transform(rotate(45deg));
+    top: 2.22222px;
+    height: 14px;
+    width: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-color: #fff;
+    display: block;top: 3px;height: 11px;width: 7px;
+}
+
+.mui-checkbox-text {
+  padding-left: 8px;
+  font-weight: $font-weight-regular;
+}

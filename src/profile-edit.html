@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta, Title, Styles, Scripts 
+	================================================== -->
+	<meta name="charset" content="UTF-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width" />
+	<title>You'll Speak</title>
+
+	<link rel="stylesheet" type="text/css" href="css/app.min.css">
+
+</head>
+<body>
+<div class="off-canvas--body">
+
+	<!-- HEADER
+	================================================== -->
+	<header class="site-header mui--clearfix" role="banner">
+	<div class="site-header__inner mui--clearfix">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+ 
+               <div class="nav-wrap">
+     	
+
+     		<!-- Start Head -->
+			<div class="site-header__head">
+	          <a href="index.html">
+				<div class="logo--main" title="You'll Speak">You'll Speak</div>
+	          </a>
+			</div>
+			<!-- End Head -->
+
+
+			<!-- Start Hamburger -->
+			<button class="site-header__hamburger mui--clearfix">
+			<span class="site-header__hamburger--bar"></span>
+			</button>
+			<!-- End Hamburger -->
+
+
+			<!-- Start Login/Signin -->
+               <ul class="site-header__login-sign">
+               <!-- <li class="nav__item nav__item--login">
+               	<a href="#" class="mui-btn mui-btn--outline-snow">Log In</a>
+               </li>
+               <li class="nav__item">
+               	<a href="#" class="mui-btn mui-btn--primary">Sign Up</a>
+               </li> -->
+
+               <div class="loged-in-header">
+               <span class="site-header__icon-message">
+				<object style="margin-bottom: 12px;" data="img/icons/ic_local_post_office.svg" type="image/svg+xml">
+				<img src="img/icons/ic_local_post_office.svg" />
+				</object>
+
+				<span class="site-header__icon-notification"></span>
+			</span>
+            
+               <div class="mui-dropdown">
+			  <button class="nav-avatar-btn" data-mui-toggle="dropdown">
+			     <img style="margin-left: 15px;" src="img/test/desktop-avatar.png" alt="User Avatar">
+			     <span class="nav-avatar-arrow mui-caret"></span>
+			  </button>
+			  <ul class="mui-dropdown__menu nav__avatar-dropdown">
+			    <li><a href="profile-view.html">My Profile</a></li>
+			    <li><a href="profile-messages.html">My Messages</a></li>
+			    <li><a href="community.html">My Friends</a></li>
+			    <li><a href="index.html">Log Out</a></li>
+			  </ul>
+			</div>
+			</div>
+               </ul>
+               <!-- Stop Login/Signin -->
+
+
+               <!-- START NAVIGATION -->
+               <nav role="navigation">
+
+
+               <!-- Mobile View -->
+			<ul class="nav-mobile mui--clearfix">
+			<li class="mui-dropdown">
+				<button class="nav__link [ mui-btn mui-btn--clean mui-btn--mobile-lang ]" data-mui-toggle="dropdown">
+				EN
+				<span class="mui-caret"></span>
+				</button>
+				<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+				</ul>
+			</li>
+			</ul><!-- /mobile-nav -->
+
+
+			<!-- Tablet View -->
+               <ul class="nav-tablet mui--clearfix">
+			<li class="nav__item">
+			<div class="mui-dropdown">
+			<button class="nav__Link mui-btn mui-btn--lang mui-btn--no-pd " data-mui-toggle="dropdown">
+	          <span class="nav__icon-public">
+				<object class="icon-public" data="img/icons/ic_public.svg" type="image/svg+xml">
+				<img class="icon-public" src="img/icons/ic_public.svg" />
+				</object>
+			</span>
+			ENGLISH
+			<span class="mui-caret"></span>
+			</button>
+			<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+			</ul>
+			</div>
+			</li>
+               </ul>
+
+			<!-- Desktop View -->
+               <ul class="nav-desktop mui--clearfix">
+               <li class="nav__item">
+               <div class="mui-dropdown">
+                    <button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+                    Choose a Language
+                    <span class="mui-caret"></span>
+                    </button>
+                    <ul class="mui-dropdown__menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">Polish</a></li>
+                    </ul>
+               </div>
+               </li><!-- /lang -->
+               <li class="nav__item">
+                    <a href="community.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Members of community</a>
+               </li>
+               <li class="nav__item">
+                    <a href="groups.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Group Talks</a>
+               </li>
+			</ul><!-- /desktop-nav -->
+
+
+               </nav>
+               </div><!-- /nav-wrap -->
+               <!-- END NAVIGATION -->
+
+ 
+		</div><!-- /mui-col -->
+		</div><!-- /row --> 
+		</div><!-- /mui-container -->
+
+
+		<!-- START OFF CANVAS MENU -->
+		<nav class="canvas-menu" role="navigation">
+		<ul class="canvas-menu__list">
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Login</a>
+			</li>
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Sign Up</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="community.html">Members of Community</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="friends.html">Friends</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-view.html">Profile</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon canvas--icon-message">
+
+					<object style="margin-bottom: 10px;" data="img/icons/ic_insert_comment.svg" type="image/svg+xml">
+					<img src="img/icons/ic_insert_comment.svg" />
+					</object>
+
+					<span class="canvas--icon-notification"></span>
+					
+				</span>
+				<a class="canvas-menu__link" href="messages.html">Messages</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="groups.html">Group talks</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-edit.html">Edit profile</a>
+			</li>
+		</ul>
+		</nav>
+		<!-- END OFF CANVAS MENU -->
+
+
+	</div><!-- /site-header-inner -->
+	</header>
+ 	<!-- END SITE HEADER -->
+ 
+
+
+
+	<!-- BANNER -->
+ 	<section class="banner">
+	<div class="mui-container">
+	<div class="mui-row">
+	<div class="mui-col-xs-12">
+		 
+	 	<span class="banner__title">Fill your form and feel a freedom of talks</span>
+
+	</div><!-- /col -->
+	</div><!-- /mui-row -->
+	</div><!-- /mui-container -->
+	</section>
+	<!-- END BANNER -->
+
+
+
+ 	<!-- START MAIN CONTENT -->
+	<div class="mui-container">
+	<div class="mui-row">
+
+		<!-- USER SIDEBAR -->
+		<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-4">
+		<aside class="user__sidebar mui-panel mui-panel--large">
+		
+		 	<div class="mui-row">
+			<div class="mui-col-xs-12">
+			<div class="profile-edit__sidebar-content">
+
+				<img class="profile-edit__sidebar-img" src="img/default/user_placeholder.svg">
+
+				<div class="profile-edit__sidebar-text">
+				<p class="profile-edit__sidebar-para">If you want to upload a picture in your profile please click here (otherwise we will take a picture from your Google+ account)</p>
+		 
+			  	<button class="mui-btn mui-btn--upload-photo profile-edit__upload-btn">
+			  		<img class="profile-edit__upload-icon" src="img/icons/ic_add_a_photo.svg">
+			  		<span class="profile-edit__upload-text">UPLOAD PHOTO</span>
+			  	</button>
+			  	</div>
+
+			</div>
+			</div>
+
+		</aside>
+		</div>
+		<!-- END USER SIDEBAR -->
+
+
+		<!-- USER INFORMATION -->
+		<main class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-8">
+		<div class="user__info mui-panel">
+		<form class="mui-form">
+
+			<div class="mui-row">
+			<div class="mui-col-xs-12 mui-col-lg-12">
+
+				<div class="mui-textfield mui-textfield--float-label">
+					<input type="text">
+					<label>What's your name?</label>
+				</div>
+
+			</div>
+			</div>
+
+			<div class="mui-row profile-edit__field-group">
+			<div class="mui-col-xs-12 mui-col-lg-4">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Where are you from?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-4">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Where do you live?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+
+			<div class="mui-col-xs-12 mui-col-lg-4">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>Native language?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			</div><!-- /mui-row -->
+
+
+
+ 
+			<div class="mui-row profile-edit__field-group">
+			<div class="mui-col-xs-10 mui-col-lg-10">
+			<div class="mui-row">
+
+				<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>What is your native language?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+				</div>
+
+				<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>What is your level?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+				</div>
+
+			</div><!-- /mui-row -->
+			</div><!-- /col 11 -->
+
+			<div class="mui-col-xs-1 mui-col-lg-2">
+				<div class="profile-edit__add-lang">
+				<form>
+					<div class="profile-edit__manage-lang-item">
+					<img class="profile-edit__manage-lang-icon" src="img/icons/ic_add_copy.svg">
+					</div>
+				</form>
+				</div>
+			</div>
+			</div><!-- /mui-row -->
+
+			<div class="mui-row profile-edit__field-group">
+			<div class="mui-col-xs-10 mui-col-lg-10">
+			<div class="mui-row">
+
+				<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>What is your native language?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+				</div>
+
+				<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6">
+				<form class="mui-form">
+				  <div class="mui-select">
+				    <select class="community__search-input">
+				      <option>What is your level?</option>
+				      <option>Polish</option>
+				      <option>Russian</option>
+				      <option>Italian</option>
+				    </select>
+				  </div>
+				</form>
+				</div>
+
+			</div><!-- /mui-row -->
+			</div><!-- /col 11 -->
+
+			<div class="mui-col-xs-1 mui-col-lg-2">
+				<div class="profile-edit__add-lang">
+				<form>
+					<div class="profile-edit__manage-lang-item">
+					<img class="profile-edit__manage-lang-icon" src="img/icons/ic_del.svg">
+					</div>
+					<div class="profile-edit__manage-lang-item">
+					<img class="profile-edit__manage-lang-icon" src="img/icons/ic_add_copy.svg">
+					</div>
+				</form>
+				</div>
+			</div>
+			</div><!-- /mui-row -->
+ 
+
+
+			<div class="mui-row profile-edit__field-group">
+			<div class="mui-col-lg-12">
+			<p class="profile-edit__about-text">Please write something about yourself, we kindly ask you to do it because additional information tells to other people some sides of you and it also helps to find a real friends.</p>
+			</div>
+			</div><!-- /mui-row -->
+
+			<div class="mui-row profile-edit__field-group">
+			<div class="mui-col-lg-12">
+
+				<span class="profile-edit__span">Something about yourself</span>
+				<div class="mui-textfield mui-textfield--float-label">
+					<input type="text">
+					<label>Please write something about yourself, we kindly ask you to do because additional information tells to other people some sides of you and it also helps to find a real friends.</label>
+				</div>
+
+			</div>
+			</div>
+
+		</form>
+		</div>
+
+
+		<div class="mui-row">
+		<div class="mui-col-lg-12">
+			<form>
+			<button class="mui-btn mui-btn--primary mui--pull-right">Save</button>
+			</form>
+		</div>
+		</div>
+
+
+		
+
+		</main>
+		<!-- END USER INFORMATION -->
+
+	</div><!-- /mui-row -->	
+	</div><!-- /mui-container -->
+	<!-- END MAIN CONTENT -->
+
+
+<!-- FOOTER
+	================================================== -->
+	<footer class="site-footer" role="contentinfo">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<div class="site-footer__company-desc">
+               <a href="index.html" class="site-footer__logo">
+				<span class="logo--main" title="You'll Speak">You'll Speak</span>
+               </a>
+
+			<p class="site-footer__quote">Be careful about your dreams because most likey you will get it</p>
+			</div><!-- /company-desc -->
+
+               <div class="site-footer__support">
+               <span class="icon-envelope icon-envelope--main mui--pull-left" title="Envelope">Envelope</span>
+               support@youllspeak.com 
+               </div>
+
+          </div>
+          </div>
+          </div>
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<p class="site-footer__copyright">© 2017 You’ll speak. Все права защищены.</p>
+
+		</div>
+		</div>
+		</div>
+
+
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+
+</div><!-- /off-canvas-body -->
+
+     <!-- CORE JAVASCRIPT
+     ================================================== -->
+     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+// ==========================================================================
+// #Layouts
+// ==========================================================================
+//
+//	Table of Content
+//	
+//	- Logo
+//	- Clearfix
+//	- RTL/LTR
+//	- Container
+//
+
+//Variables
+//============================================================================
+%logo {
+	display: block;
+    min-height: 53px;
+    min-width: 125px;
+    background: no-repeat;
+	@include accessibility-text();
+	@include media-query(medium) {
+	    min-width: 149px;
+	}
+}
+
+%icon {
+	display: block;
+    min-height: 34px;
+    min-width: 34px;
+    background: no-repeat;
+	@include accessibility-text();
+}
+
+
+
+// Logo
+.logo {
+
+    &--main {
+        background-size: 120px;
+        @include media-query(medium) {
+        	background-size: inherit;
+        }
+    	@extend %logo;
+		background-image: url('../../img/logo/logo.svg');
+	}
+
+	&--invert {
+		@extend %logo;
+		background-image: url('../../img/logo/mobile-logo_invert.svg');
+	}
+
+}
+
+
+
+//Icons
+//============================================================================
+
+//Envelope
+.icon-envelope {
+	@extend %icon;
+
+	&--main {
+		@extend %icon;
+		background-image: url('../../img/icons/ic_drafts.svg');
+
+		@include media-query(medium) {
+			background-image: url('../../img/icons/ic_drafts.svg');
+		}
+
+		@include media-query(medium) {
+			background-image: url('../../img/icons/ic_drafts.svg');
+		}
+	}
+
+	&--inverse {
+		@extend %icon;
+		background-image: url('../../img/icons/mobile-ic_drafts.svg');
+
+		@include media-query(medium) {
+			background-image: url('../../img/icons/tablet-ic_drafts.svg');
+		}
+
+		@include media-query(medium) {
+			background-image: url('../../img/icons/desktop-ic_drafts.svg');
+		}
+	}
+}
+
+//Icon Forum
+.icon-forum {
+	@extend %icon;
+	&--main {
+		@extend %icon;
+		background-image: url('../../img/icons/mobile-ic_forum.svg');
+		min-height: 48px;
+		@include media-query(medium) {
+			background-image: url('../../img/icons/tablet-ic_forum.svg');
+		}
+
+		@include media-query(medium) {
+			min-height: 68px;
+			background-image: url('../../img/icons/desktop-ic_forum.svg');
+		}
+	}
+}
+
+.icon-community {
+	@extend %icon;
+	&--main {
+		@extend %icon;
+		background-image: url('../../img/icons/ic_community.svg');
+		min-height: 48px;
+		margin-bottom: 7px;
+		@include media-query(medium) {
+			background-image: url('../../img/icons/ic_community.svg');
+			margin-bottom: unset;
+		}
+
+		@include media-query(medium) {
+			min-height: 68px;
+			background-image: url('../../img/icons/ic_community.svg');
+		}
+	}
+}
+
+//Icon Public/World
+
+.nav__icon-public:hover .icon-public {
+	fill: #0e9d58;
+}

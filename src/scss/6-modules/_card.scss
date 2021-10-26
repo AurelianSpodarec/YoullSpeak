@@ -1,0 +1,88 @@
+// ==========================================================================
+// #Card
+// ==========================================================================
+
+
+.mui-card {
+	@include transition(.6s ease);
+
+	&__info {
+		height: auto;
+	    @include absolute(right 0 bottom 0 left 0);
+		@include media-query(medium) {
+			margin-bottom: 30px;
+			left: unset;
+			right: unset;
+		}
+		@include media-query(x-large) {
+		    top: 50%;
+		    right: unset;
+		    bottom: unset;
+		    left: unset;
+
+		    margin-right: unset;
+			margin-left: unset;
+
+		    width: 400px;
+		    margin-bottom: 0;
+
+		    @include transform(translateY(-50%));
+		}
+
+		&--desc-wrap {
+			@include media-query(medium) {
+				display: table-cell;
+			}
+			@include media-query(x-large) {
+				display: unset;
+			}
+		}
+
+		&--forum-icon {
+			@include media-query(medium) {
+				float: left;    
+				width: 86px;
+			    display: table-cell;
+			}
+			@include media-query(x-large) {
+				float: none;
+				width: unset;
+				display: block;
+			}
+		}
+	}// info
+
+
+	&__info--inner {
+		opacity: .9;
+		padding: 30px;
+		margin-bottom: 0; 
+		@include media-query(medium) {
+			padding: 30px;
+			@include border-radius(4px);
+		}
+		@include media-query(x-large) {
+			padding: 40px;
+		}
+	}
+
+	&__info--desc {
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		line-height: 20px;
+		color: #000;
+		margin-bottom: 10px;
+		@include media-query(medium) {
+			font-size: 16px;
+			letter-spacing: 0.57px;
+			line-height: 23px;
+		}
+		@include media-query(x-large) {
+			font-weight: $font-weight-light;
+			font-size: 20px;
+			color: rgba(0,0,0,0.87);
+			line-height: 28px;
+		}
+	}
+
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta, Title, Styles, Scripts 
+	================================================== -->
+	<meta name="charset" content="UTF-8">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width" />
+	<title>You'll Speak</title>
+
+	<link rel="stylesheet" type="text/css" href="css/app.min.css">
+
+</head>
+<body>
+<div class="off-canvas--body">
+
+	<!-- HEADER
+	================================================== -->
+	<header class="site-header mui--clearfix" role="banner">
+	<div class="site-header__inner mui--clearfix">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+ 
+               <div class="nav-wrap">
+     	
+
+     		<!-- Start Head -->
+			<div class="site-header__head">
+	          <a href="index.html">
+				<div class="logo--main" title="You'll Speak">You'll Speak</div>
+	          </a>
+			</div>
+			<!-- End Head -->
+
+
+			<!-- Start Hamburger -->
+			<button class="site-header__hamburger mui--clearfix">
+			<span class="site-header__hamburger--bar"></span>
+			</button>
+			<!-- End Hamburger -->
+
+
+			<!-- Start Login/Signin -->
+               <ul class="site-header__login-sign">
+               <!-- <li class="nav__item nav__item--login">
+               	<a href="#" class="mui-btn mui-btn--outline-snow">Log In</a>
+               </li>
+               <li class="nav__item">
+               	<a href="#" class="mui-btn mui-btn--primary">Sign Up</a>
+               </li> -->
+
+               <div class="loged-in-header">
+               <span class="site-header__icon-message">
+				<object style="margin-bottom: 12px;" data="img/icons/ic_local_post_office.svg" type="image/svg+xml">
+				<img src="img/icons/ic_local_post_office.svg" />
+				</object>
+
+				<span class="site-header__icon-notification"></span>
+			</span>
+            
+               <div class="mui-dropdown">
+			  <button class="nav-avatar-btn" data-mui-toggle="dropdown">
+			     <img style="margin-left: 15px;" src="img/test/desktop-avatar.png" alt="User Avatar">
+			     <span class="nav-avatar-arrow mui-caret"></span>
+			  </button>
+			  <ul class="mui-dropdown__menu nav__avatar-dropdown">
+			    <li><a href="profile-view.html">My Profile</a></li>
+			    <li><a href="profile-messages.html">My Messages</a></li>
+			    <li><a href="community.html">My Friends</a></li>
+			    <li><a href="index.html">Log Out</a></li>
+			  </ul>
+			</div>
+			</div>
+               </ul>
+               <!-- Stop Login/Signin -->
+
+
+               <!-- START NAVIGATION -->
+               <nav role="navigation">
+
+
+               <!-- Mobile View -->
+			<ul class="nav-mobile mui--clearfix">
+			<li class="mui-dropdown">
+				<button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+				EN
+				<span class="mui-caret"></span>
+				</button>
+				<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+				</ul>
+			</li>
+			</ul><!-- /mobile-nav -->
+
+
+			<!-- Tablet View -->
+               <ul class="nav-tablet mui--clearfix">
+			<li class="nav__item">
+			<div class="mui-dropdown">
+			<button class="nav__Link mui-btn mui-btn--lang mui-btn--no-pd " data-mui-toggle="dropdown">
+	          <span class="nav__icon-public">
+				<object class="icon-public" data="img/icons/ic_public.svg" type="image/svg+xml">
+				<img class="icon-public" src="img/icons/ic_public.svg" />
+				</object>
+			</span>
+			ENGLISH
+			<span class="mui-caret"></span>
+			</button>
+			<ul class="mui-dropdown__menu">
+				<li><a href="#">English</a></li>
+				<li><a href="#">Russian</a></li>
+				<li><a href="#">Italian</a></li>
+				<li><a href="#">Polish</a></li>
+			</ul>
+			</div>
+			</li>
+               </ul>
+
+			<!-- Desktop View -->
+               <ul class="nav-desktop mui--clearfix">
+               <li class="nav__item">
+               <div class="mui-dropdown">
+                    <button class="nav__link [ mui-btn mui-btn--clean ]" data-mui-toggle="dropdown">
+                    Choose a Language
+                    <span class="mui-caret"></span>
+                    </button>
+                    <ul class="mui-dropdown__menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">Polish</a></li>
+                    </ul>
+               </div>
+               </li><!-- /lang -->
+               <li class="nav__item">
+                    <a href="community.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Members of community</a>
+               </li>
+               <li class="nav__item">
+                    <a href="groups.html" class="nav__link [ mui-btn mui-btn--hover-drk mui-btn--clean ]">Group Talks</a>
+               </li>
+			</ul><!-- /desktop-nav -->
+
+
+               </nav>
+               </div><!-- /nav-wrap -->
+               <!-- END NAVIGATION -->
+
+ 
+		</div><!-- /mui-col -->
+		</div><!-- /row --> 
+		</div><!-- /mui-container -->
+
+
+		<!-- START OFF CANVAS MENU -->
+		<nav class="canvas-menu" role="navigation">
+		<ul class="canvas-menu__list">
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Login</a>
+			</li>
+			<li class="canvas-menu__item">
+				<a class="canvas-menu__link" href="#">Sign Up</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="community.html">Members of Community</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="friends.html">Friends</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-view.html">Profile</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon canvas--icon-message">
+
+					<object style="margin-bottom: 10px;" data="img/icons/ic_insert_comment.svg" type="image/svg+xml">
+					<img src="img/icons/ic_insert_comment.svg" />
+					</object>
+
+					<span class="canvas--icon-notification"></span>
+					
+				</span>
+				<a class="canvas-menu__link" href="messages.html">Messages</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_forum.svg"></span>
+				<a class="canvas-menu__link" href="groups.html">Group talks</a>
+			</li>
+			<li class="canvas-menu__item">
+				<span class="canvas-menu__icon"><img src="img/icons/ic_edit.svg"></span>
+				<a class="canvas-menu__link" href="profile-edit.html">Edit profile</a>
+			</li>
+		</ul>
+		</nav>
+		<!-- END OFF CANVAS MENU -->
+
+
+	</div><!-- /site-header-inner -->
+	</header>
+ 	<!-- END SITE HEADER -->
+ 
+
+
+
+	<!-- BANNER -->
+ 	<section class="banner hide-tablet--below">
+	<div class="mui-container">
+	<div class="mui-row">
+	<div class="mui-col-xs-12">
+		 
+	 	<span class="banner__title">Messages</span>
+
+	</div><!-- /col -->
+	</div><!-- /mui-row -->
+	</div><!-- /mui-container -->
+	</section>
+	<!-- END BANNER -->
+
+
+ 	<!-- START MAIN CONTENT -->
+ 	<div class="mui-container mobile-full--container">
+	<div class="mui-row mobile-full--row">
+
+				<!-- USER SIDEBAR -->
+		<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-4 hide-tablet--below">
+		<aside class="user-sidebar mui-panel mui-panel--large">
+		
+			<div class="mui-row ">
+			<div class="mui-col-xs-12">
+				<div class="user-sidebar__avatar">
+					<img class="user-sidebar__avatar-img" src="https://odesk-prod-portraits.s3.amazonaws.com/Users:05d5dbad:PortraitUrl?AWSAccessKeyId=1XVAX3FNQZAFC9GJCFR2&Expires=2147483647&Signature=e2MH%2FDlJ%2BiqN3V7zh0vNvcqNhRc%3D&1497705543882189">
+					<div class="user-status user-status--online"></div>
+				</div>
+			</div>
+			</div>
+			
+
+			<div class="mui-row">
+			<div class="mui-col-xs-12 user-sidebar__star-rating--wrap">
+
+				<div class="user-sidebar__star-rating mui--clearfix">
+				<fieldset class="rating">
+					<input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+					<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+					<input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+					<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+					<input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+					<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+					<input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+					<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+					<input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+					<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+				</fieldset>
+				</div>
+
+			</div>
+			</div>
+
+			<div class="mui-row">
+ 
+				<div class="user-sidebar__btn-item user-sidebar__btn-item--1">
+				<button class="mui-btn user-sidebar__btn-item--link mui-btn--primary">Add to friends</button>
+				</div>
+
+				<div class="user-sidebar__btn-item user-sidebar__btn-item--2">
+				<button class="mui-btn user-sidebar__btn-item--link mui-btn--outline-primary mui-btn--card">Speak online</button>
+				</div>
+
+			</div>
+
+
+			<div class="mui-row">
+			<div class="mui-col-xs-12">
+
+
+				<div class="user-sidebar__item">
+				<a href="friends.html">
+					<span class="user-sidebar__icon">
+					<img src="img/icons/ic_group-green.svg">
+					</span>
+					<span class="user-sidebar__text">Friends</span>
+				</a>
+				</div>
+
+				<div class="user-sidebar__item">
+				<a href="profile-messages.html">
+					<span class="user-sidebar__icon">
+					<img src="img/icons/ic_insert_comment-green.svg">
+					</span>
+					<span class="user-sidebar__text">Messages</span>
+				</a>
+				</div>
+
+				<div class="user-sidebar__item">
+				<a href="groups.html">
+					<span class="user-sidebar__icon">
+					<img src="img/icons/ic_forum-green.svg">
+					</span>
+					<span class="user-sidebar__text">Group talks</span>
+				</a>
+				</div>
+
+				<div class="user-sidebar__item">
+				<a href="profile-edit.html">
+					<span class="user-sidebar__icon">
+					<img src="img/icons/ic_edit-green.svg">
+					</span>
+					<span class="user-sidebar__text">Edit Profile</span>
+				</a>
+				</div>
+
+				<div class="user-sidebar__item">
+				<a href="#" onclick="createBanModal();">
+					<span class="user-sidebar__icon">
+					<img src="img/icons/ic_edit-green.svg">
+					</span>
+					<span class="user-sidebar__text">Ban from group talks</span>
+				</a>
+				</div>
+
+
+			</div><!-- /mui-col -->
+			</div><!-- /mui-row -->
+
+
+		</aside><!-- /user-sidebar -->
+		</div><!-- /mui-col -->
+		<!-- END USER SIDEBAR -->
+
+
+
+		<!-- USER INFORMATION -->
+		<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-12 mui-col-lg-8 mobile-full--col">
+		<main class="user-profile__info mui-panel mui-panel--clean">
+
+
+			<!-- Show Tablet below -->
+			<div class="mui-row mobile-full--row hide-desktop--up">
+			<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6 mobile-full--col">
+			<div class="user-profile__wrap mui-panel--inside">
+
+
+					<div class="user-profile__avatar-wrap mui--clearfix">
+						<img class="user-profile__avatar" src="img/default/avatar_big.png">
+						<div class="user-profile__user-status user-status--offline"></div>
+					</div>
+
+					<div class="user-profile__side-content">
+					<span class="user-profile__name">Jessica Smith</span>
+					<div class="user-profile__star-rating mui--clearfix">
+						<fieldset class="rating">
+					    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+					    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+					    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+					    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+					    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+					    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+					    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+					    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+					    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+					    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+					</fieldset>
+					</div>
+
+					<div>
+					<img class="user-profile__chat-btn" src="img/logo/logo.svg">
+					</div>
+				</div><!-- /user-profile__side-content -->
+
+				</div><!-- /user-profile__ -->
+				</div><!-- /mui-col -->
+
+				<div class="mui-col-xs-12 mui-col-sm-12 mui-col-md-6 mui-col-lg-6 mobile-full--col">
+				<div class="user-profile__list  mui-panel--inside">
+
+					<div class="user-profile__item">
+					<a href="friends.html">
+						<span class="user-profile__icon">
+							<img class="user-profile__icon-img" src="img/icons/ic_group-green.svg">
+						</span>
+						<span class="user-profile__text">Friends</span>
+					</a>
+					</div>
+					<div class="user-profile__item">
+					<a href="groups.html">
+						<span class="user-profile__icon">
+							<img class="user-profile__icon-img" src="img/icons/ic_insert_comment-green.svg">
+						</span>
+						<span class="user-profile__text">Messages</span>
+					</a>
+					</div>
+					<div class="user-profile__item">
+					<a href="groups.html">
+						<span class="user-profile__icon">
+							<img class="user-profile__icon-img" src="img/icons/ic_forum-green.svg">
+						</span>
+						<span class="user-profile__text">Group talks</span>
+					</a>
+					</div>
+
+				</div><!-- /user-profile__list -->
+				</div><!-- /mui-col -->
+
+			</div><!-- /mui-row -->
+			<!-- End Show Tablet Below -->
+
+			<!-- Messages -->
+			<div class="mui-row mobile-full--row">
+			<div class="mui-col-xs-12 mui-col-lg-12 mobile-full--col">
+
+				<div class="message-user__header">
+				<span>Chat with Jennifer</span>
+				</div>
+
+				<div class="message-user__body">
+					<ul class="message-user__list">
+						<li class="message-user__reply">
+
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+
+							<div class="message-user__content">
+							<span class="message-user__time-stamp">4:10 PM</span>
+							<p class="message-user__message message-user__message--inverse">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+							</div>
+						</li><!-- /message-user -->
+
+						<li class="message-user__reply">
+							<div class="message-user__content">
+
+								<span class="message-user__time-stamp message-user__time-stamp--main">4:10 PM</span>
+								<p class="message-user__message message-user__message--main">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+
+							</div>
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+						</li><!-- /message-user -->
+						<li class="message-user__reply">
+
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+
+							<div class="message-user__content">
+							<span class="message-user__time-stamp">4:10 PM</span>
+							<p class="message-user__message message-user__message--inverse">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+							</div>
+						</li><!-- /message-user -->
+
+						<li class="message-user__reply">
+							<div class="message-user__content">
+
+								<span class="message-user__time-stamp message-user__time-stamp--main">4:10 PM</span>
+								<p class="message-user__message message-user__message--main">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+
+							</div>
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+						</li><!-- /message-user -->
+						<li class="message-user__reply">
+
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+
+							<div class="message-user__content">
+							<span class="message-user__time-stamp">4:10 PM</span>
+							<p class="message-user__message message-user__message--inverse">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+							</div>
+						</li><!-- /message-user -->
+
+						<li class="message-user__reply">
+							<div class="message-user__content">
+
+								<span class="message-user__time-stamp message-user__time-stamp--main">4:10 PM</span>
+								<p class="message-user__message message-user__message--main">Hey let’s catch up soon. Do you want to grab lunch sometime this weekend? Let me know when you’re free!</p>
+
+							</div>
+							<img class="message-user__avatar" src="img/default/avatar_big.png">
+						</li><!-- /message-user -->
+					</ul>
+				</div>
+
+				<div class="message-user__input">
+					<form class="mui-form">
+					<div class="mui-textfield">
+						<input type="text" placeholder="Input 1">
+					</div>
+					</form>
+				</div>
+
+				<div class="message-user__send-wrap mui--clearfix">
+					<a href="profile-messages.html" class="message-user__go-back">
+						<img src="img/icons/ic_reply-icon--green.svg">
+					</a>
+
+					<div class="message-user__send-icon-wrap">
+					<img  class="message-user__send-icon" src="img/icons/ic_send.svg">
+					<span class="message-user__send">Send</span>
+					</div>
+				</div>
+
+			</div>
+			</div>
+
+			</main>
+
+
+		</div>
+		<!-- END USER INFORMATION -->
+
+
+	</div><!-- /mui-row -->	
+	</div><!-- /mui-container -->
+	<!-- END MAIN CONTENT -->
+
+
+
+<!-- FOOTER
+	================================================== -->
+	<footer class="site-footer" role="contentinfo">
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<div class="site-footer__company-desc">
+               <a href="index.html" class="site-footer__logo">
+				<span class="logo--main" title="You'll Speak">You'll Speak</span>
+               </a>
+
+			<p class="site-footer__quote">Be careful about your dreams because most likey you will get it</p>
+			</div><!-- /company-desc -->
+
+               <div class="site-footer__support">
+               <span class="icon-envelope icon-envelope--main mui--pull-left" title="Envelope">Envelope</span>
+               support@youllspeak.com 
+               </div>
+
+          </div>
+          </div>
+          </div>
+
+
+		<div class="mui-container">
+		<div class="mui-row">
+		<div class="mui-col-xs-12">
+
+			<p class="site-footer__copyright">© 2017 You’ll speak. Все права защищены.</p>
+
+		</div>
+		</div>
+		</div>
+
+
+	</footer>
+	<!-- END FOOTER -->
+
+
+
+
+</div><!-- /off-canvas-body -->
+     <!-- CORE JAVASCRIPT
+     ================================================== -->
+     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>

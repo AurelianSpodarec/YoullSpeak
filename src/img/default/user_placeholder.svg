@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <circle id="user_placeholder-a" cx="40" cy="40" r="40"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="user_placeholder-b" fill="#fff">
+      <use xlink:href="#user_placeholder-a"/>
+    </mask>
+    <use fill="#D8D8D8" xlink:href="#user_placeholder-a"/>
+    <path fill="#F3F3F3" d="M40,42.6666667 C48.8533333,42.6666667 55.9466667,35.52 55.9466667,26.6666667 C55.9466667,17.8133333 48.8533333,10.6666667 40,10.6666667 C31.1466667,10.6666667 24,17.8133333 24,26.6666667 C24,35.52 31.1466667,42.6666667 40,42.6666667 L40,42.6666667 Z M40,53.3333333 C29.3333333,53.3333333 8,58.6666667 8,69.3333333 L8,80 L72,80 L72,69.3333333 C72,58.6666667 50.6666667,53.3333333 40,53.3333333 L40,53.3333333 Z" mask="url(#user_placeholder-b)"/>
+  </g>
+</svg>

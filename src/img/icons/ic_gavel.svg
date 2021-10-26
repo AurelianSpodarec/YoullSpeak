@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <polygon id="ic_gavel-a" points="0 0 24 0 24 24 0 24"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-1 -1)">
+    <mask id="ic_gavel-b" fill="#fff">
+      <use xlink:href="#ic_gavel-a"/>
+    </mask>
+    <path fill="#167F45" d="M1,21 L13,21 L13,23 L1,23 L1,21 Z M5.245,8.07 L8.075,5.243 L22.215,19.385 L19.387,22.213 L5.245,8.07 Z M12.317,1 L17.974,6.656 L15.144,9.486 L9.49,3.826 L12.317,1 Z M3.825,9.485 L9.482,15.142 L6.654,17.97 L0.997,12.313 L3.825,9.485 Z" mask="url(#ic_gavel-b)"/>
+  </g>
+</svg>

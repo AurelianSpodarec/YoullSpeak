@@ -1,0 +1,23 @@
+// ==========================================================================
+// #User Status
+// ==========================================================================
+
+.user-status {
+	@include absolute(top 75% right 7%);
+	z-index: 1000;
+	border: 2px solid white;
+	border-radius: 50%;
+	@include box(12px);
+	@include media-query(medium) {
+		@include box(23px);
+		border: 3px solid $white;
+	}
+	
+	
+}
+.user-status--online {
+	background: #07821B;
+}
+.user-status--offline {
+	background: #9A9A9A;
+}

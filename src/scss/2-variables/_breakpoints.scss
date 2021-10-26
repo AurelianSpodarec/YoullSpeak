@@ -1,0 +1,19 @@
+// ==========================================================================
+// #Breakpoints
+// ==========================================================================
+
+// Add as many as you want. There is a loop that goes over it in Mixin section. 
+// Usage: @include media-query(value) {};
+
+$mui-breakpoints: (
+	small: 544px,
+	medium: 768px,
+	large: 992px,
+	x-large: 1200px
+);
+
+$small: 544px;
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+

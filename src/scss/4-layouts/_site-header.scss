@@ -1,0 +1,89 @@
+// ==========================================================================
+// #Site Header
+// ==========================================================================
+
+ 
+
+.site-header {
+	@extend %header;
+	&--fixed-top {
+		@extend %header--fixed-top;
+	}
+	&__inner {
+		@extend %header-inner;
+	    &--inverse {
+	    	@extend %header-inner;
+	    	@extend %header--inverse-inner 
+	    }
+	}
+
+	&__head {
+		@extend %header-head;
+	}
+
+	&__hamburger {
+		@extend %header-hamburger;
+
+		&--bar {
+			@extend %header-hamburger-bar;
+		}
+
+		&.is-active .site-header__hamburger--bar {
+		@extend %header-hamburger-bar--active;
+		}
+
+		&.is-active.site-header__hamburger {
+		@extend %header-hamburger--active;
+		}
+	}// hamburger menu
+
+	&__login-sign {
+		@extend %header-login-sign;
+	}
+
+	&__icon-message {
+		position: relative;
+		
+
+	}
+	&__icon-notification {
+	    @include absolute(top -125% right 0px);
+	   	@include box(9px);
+	    border-radius: 50%;
+	    background: #da0606;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glass {
+
+    &.is-active {
+		-webkit-filter: blur(4px);
+	    filter: blur(4px);
+	    background-size: cover;
+	    opacity: .5;
+	    background-color: #fff;
+	    left: 0;
+	    width: 100%;
+	    opacity: .23;
+	    height: 88px;
+	    position: fixed;
+	    z-index: -1;
+	    top: 0;
+    }
+}

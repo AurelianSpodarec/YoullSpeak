@@ -1,0 +1,29 @@
+// ==========================================================================
+// #Mui Panel
+// ==========================================================================
+
+
+.mui-panel {
+	padding: 30px;
+	@media only screen and (max-width: 380px) { 
+		padding: 15px;
+	}
+	&--clean {
+		padding: 0;
+	}
+	&--small {
+		padding: 20px;
+	}
+	&--large {
+		padding: 40px;
+	}
+	&--inside {
+		padding: 20px;
+		&-medium {
+			padding: 25px;
+		}
+	}
+	&--no-margin {
+		margin-bottom: 0;
+	}
+}

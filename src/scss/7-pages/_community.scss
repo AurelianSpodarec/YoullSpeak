@@ -1,0 +1,148 @@
+// ==========================================================================
+// #Community
+// ==========================================================================
+
+// Community: Search
+.community{
+
+	&__search {
+		display: none;
+		&.is-active {
+			display: block;
+		}
+		@include media-query(medium) {
+			margin-bottom: 25px;
+			display: block;
+		}
+
+		&-icon-wrap {
+			display: tabel;
+			text-align: center;
+			margin-bottom: 10px;
+			cursor: pointer;
+			@include media-query(medium) {
+				display: none;
+			}
+		}
+		&-icon {
+			vertical-align: middle;
+		}
+		&-text {
+			vertical-align: middle;
+			font-size: 14px;
+			color: $brand-color;
+			letter-spacing: .5px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__search-input {
+		color: #565D61 !important;
+		font-weight: $font-weight-regular !important;
+	}
+
+}
+
+// Community: User
+.community-user{
+	@include media-query(medium) {
+		margin-bottom: 25px;
+	}
+	&__header {
+		display: table-cell;
+		padding-top: 3px;
+		@include media-query(medium) {
+			padding-top: 15px; 
+		}
+	}
+
+	&__section {
+		width: 100%;
+    	float: left;
+	}
+
+	&__user-language {
+		display: inline-block;
+		height: 18px;
+	    line-height: 37px;
+		&--flag {
+			max-width: 28px;
+			height: 18px;
+		}
+	}
+
+	&__avatar {
+		float: left;	
+	}
+
+
+	&__profile {
+		display: table;
+		width: 100%;
+	}
+
+	&__profile-content {
+		position: relative;
+		@include media-query(medium) {
+			display: table-cell;
+			padding-left: 20px;
+			vertical-align: top;
+		}
+	}
+
+	&__profile-info {
+		float: left;
+	    margin-left: 10px;
+	    @include media-query(medium) {
+	    	margin-left: unset;
+	    }
+	}
+	
+
+	&__name {
+		font-weight: $font-weight-regular;
+		font-size: 20px;
+		color: rgba(0,0,0,0.87);
+		line-height: 28px;
+		float: left;
+		margin-right: 16px;
+	}
+	&__bio {
+		font-weight: $font-weight-regular;
+		font-size: 12px;
+		color: rgba(0,0,0,0.87);
+		line-height: 20px;
+		padding: 5px 0;
+	}
+
+	&__user-flag {
+		float: right;
+	}
+
+	&__more-lang {
+		&--wrap {
+		
+		}
+		&--item {
+			display: inline-block;
+			height: 18px;
+	        line-height: 19px;
+	    	margin-right: 10px;
+	    	&:last-of-type {
+	    		margin-right: 0;
+	    	}
+		}
+		&--img {
+			max-width: 28px;
+			height: 18px;
+		}
+	}
+
+	&__footer {
+		float: right;
+		&--button {
+			max-width: 108px;
+		}
+	}
+
+}

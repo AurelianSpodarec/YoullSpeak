@@ -1,0 +1,81 @@
+// ==========================================================================
+// #Banner
+// ==========================================================================
+
+%banner {
+	padding: 55px 0;
+}
+
+.banner {
+	@extend %banner;
+	background-color: $banner-inverse-bg;
+	color: $banner-inverse-color;
+
+	&--inverse {
+		@extend %banner;
+		background-color: $banner-bg;
+		color: $banner-color;
+	}
+
+	&__title {
+		font-size: 24px;
+		color: $banner-title-color;
+		line-height: 28px;
+		font-weight: $font-weight-regular;
+	}
+
+	// Banner Board
+	&__board {
+		margin-bottom: 20px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@include media-query(medium) {
+			display: inline-block;
+			margin-bottom: unset;
+			margin-right: 70px;
+			&:last-of-type {
+				margin-right: none;
+			}
+		}
+	}
+
+	&__board--number {
+		font-size: 24px;
+		color: $banner-board-number-color;
+		letter-spacing: 0.86px;
+		font-weight: bold;
+		@include media-query(medium) {
+			margin-right: 10px;
+		}
+	}
+
+	&__board--title {
+		font-size: 24px;
+		color: $banner-board-title-color;
+		line-height: 19px;
+		letter-spacing: 0.86px;
+		font-weight: $font-weight-light;
+	}
+
+	&__groups {
+		text-align: center;
+		@include media-query(medium) {
+			text-align: left;
+		}
+	}
+	&__desc {
+		font-size: 16px;
+		color: $banner-desc-color;
+		line-height: 24px;
+		&--group {
+			padding: 20px 0;
+		}
+	}
+
+	&__create-btn-img {
+		margin-right: 6px;
+	}
+
+}
+

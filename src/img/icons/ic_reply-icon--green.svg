@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>reply icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_tablet" transform="translate(-50.000000, -1241.000000)" fill="#167F45">
+            <g id="interactive-notification-copy" transform="translate(25.000000, 976.000000)">
+                <g id="clear" transform="translate(16.000000, 248.000000)">
+                    <g id="bounds">
+                        <g id="reply-icon" transform="translate(8.000000, 17.000000)">
+                            <path d="M0.963525836,7 L7.96352584,14 L7.96352584,9.9 C12.9625258,9.9 16.4635258,11.5 18.9635258,15 C17.9635258,10 14.9635258,5 7.96352584,4 L7.96352584,0 L0.963525836,7 Z" id="reply"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

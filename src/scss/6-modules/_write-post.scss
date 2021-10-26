@@ -1,0 +1,47 @@
+// ==========================================================================
+// #Write Post
+// ==========================================================================
+
+.write-post {
+
+	&--send-inner {
+		background-color: #F8F8F8;
+	}
+	&--inside-top {
+		padding: 30px 30px 10px;
+	    vertical-align: bottom;
+	}
+	&--icon-chat {
+		line-height: 3.5em;
+	}
+	&--icon-x {
+		line-height: 2.9em;
+	}
+	&--inside-bottom {
+		padding: 20px 30px;
+	}
+
+	&--send-btn {
+		float: right;
+	}
+	&--send-icon {
+		margin-right: 10px;
+		float: left;
+		margin-top: 1px;
+	}
+	&--btn {
+		font-weight: $font-weight-regular;
+		color: $brand-color;
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		border: none;
+		background: none;
+	    float: right;
+	    line-height: 1.5em;
+	    text-transform: uppercase;
+		&:hover {
+			color: $brand-color;
+		}
+	}
+
+}

@@ -1,0 +1,238 @@
+// ==========================================================================
+// #Main Nav
+// ==========================================================================
+//
+//	Table of Content
+//	
+//	- Global Styles for Navigation
+//	- Nav Mobile
+//	- Nav Tablet
+//	- Nav Desktop
+//	- Of-canvas Menu
+// 
+
+
+
+// Global Styles for Navigation
+//==========================================================================
+.nav {
+	&__item {
+		display: inline-block;
+	
+		&--login {
+			margin: 0 15px;
+		}
+	}
+	&__link {
+		font-weight: $font-weight-medium;
+		font-size: 14px;
+		letter-spacing: 0.5px; 
+		text-shadow: 0 1px 2px rgba($black, .50);
+	}
+
+	// Nav Icon Public
+	&__icon-public {
+		float: left;
+		margin-top: 11px;
+	    min-width: 22px;
+		position: relative;
+	    margin-top: 5px;
+	    float: left;
+	    margin-right: 10px;
+	}
+
+	&__avatar-dropdown {
+	    @include transform(translateX(-50%));
+	}
+ 
+}
+
+
+// Mobile Navigation
+//==========================================================================
+.nav-mobile {
+	float: left;
+	margin-top: -3px;
+	@include media-query(medium) {
+		display: none;
+	}
+}
+
+
+// Tablet Navigation
+//==========================================================================
+.nav-tablet {
+	display: none;
+	@include media-query(medium) {
+		display: block;
+		position: relative;
+		top: -4px;
+	}
+	@include media-query(x-large) {
+		display: none;
+	}
+
+}
+
+
+
+// Desktop Navigation
+//==========================================================================
+.nav-desktop {
+	display: none;
+	@include media-query(x-large) {
+		display: block;
+		float: right;
+		position: relative;
+		top: -3px;
+	    margin-right: 20px;
+	}
+}
+
+
+.menu-drop {
+	&__link{
+		padding: 20px 100px 20px 43px!important;
+	    border-color: transparent;
+		border: 2px solid;
+		color: transparent!important;
+		&:hover {
+			border-color: #d8d8d8;
+		}
+	}
+	&__list {
+		//padding: 20px 70px 20px 38px;
+	}
+	&__item {
+		//display: table;
+	}
+	&__img-wrap {
+		display: table-cell;
+		vertical-align: middle;
+		padding-right: 30px;
+	}
+	&__img {
+		@include box(24px);
+	}
+	&__text {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 16px;
+		color: rgba(0,0,0,.87);
+	}
+}
+.mui-dropdown__menu>li>a:focus, .mui-dropdown__menu>li>a:hover {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    background-color: rgba(238, 238, 238, 0);
+}
+
+
+
+// OFF Canvas Menu for MOBILE/Desktop view
+//==========================================================================
+.off-canvas--body {
+	position: relative;
+	overflow: hidden;
+}
+
+.canvas-menu {
+    background: $canvas-menu-background;
+    margin: 0;
+    padding: 0;
+    width: 78%;
+    z-index: 9998;
+    border-top: 8px solid $canvas-menu-border-top;
+    padding-bottom: 9999px;
+    height: 100%;
+	overflow-x: hidden;
+    @include absolute(top 0 right 0);
+    @include transition(.2s);
+    @include transform(translateX(100%));
+    @include media-query(medium) {
+    	width: 34%;
+    }
+    &.is-active {
+		@include transform(translateX(0));
+		@include media-query(x-large) {
+	    	@include transform(translateX(100%));
+	    }
+	}
+
+	&--body {
+   
+	}
+
+	&__list {
+		margin: 92px 0 0 40px;
+	    list-style: none;
+	    font-size: 16px;
+	    line-height: 20px;
+		font-weight: $font-weight-medium;	
+    	margin-bottom: -9999px;
+	}
+	&__item {
+		display: table;
+	}
+	&__link {
+		text-transform: uppercase;
+		color: rgba(255,255,255,0.87);
+		display: block;
+		padding: 16px 0;
+		display: inline-block;
+		display: table-cell;
+	}
+	&__icon {
+		display: inline-block;
+		margin-right: 30px;
+		padding-right: 30px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&--icon-message {
+		position: relative;
+		display: inline-block;
+		height: 16px;
+	    @include transform(translateY(100%));
+	}
+
+
+	&--icon-notification {
+		@include absolute(top -20% right -3px);
+	   	@include box(7px);
+	    border-radius: 50%;
+	    background: $icon-notification-color;
+	    display: inline-block;
+	    top: -23%;
+	}
+
+}
+
+
+
+
+.icon-notification {
+    @include absolute(top -119% right 0px);
+   	@include box(10px);
+    border-radius: 50%;
+    background: $icon-notification-color;
+    display: inline-block;
+}
+
+.loged-in-header {
+	position: relative;
+}
+
+.nav-avatar-btn {
+	background: none;
+    padding-right: 20px;
+    border: none;
+}
+
+.nav-avatar-arrow {
+	@include absolute(top 50% right 0);
+    //@include transform(translateY(-50%));
+	color: white;
+	width: 10px;
+}

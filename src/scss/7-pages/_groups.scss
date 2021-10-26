@@ -1,0 +1,37 @@
+// ==========================================================================
+// #Groups
+// ==========================================================================
+
+#create-group__form {
+	@include media-query(medium) {
+		width: 375px;
+	}
+}
+
+.groups {
+
+
+	//Groups
+	&__wrap {
+		@include media-query(x-large) {
+			margin: 65px 0;
+		}
+	}
+
+	&__modal-btn-wrap {
+		float: right;
+		padding-top: 15px;
+	}
+
+ 	&__modal-btn {
+ 		color: $brand-color;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		margin-left: 9px;
+		&:first-of-type {
+			margin-left: 0;
+		}
+ 	}
+
+}

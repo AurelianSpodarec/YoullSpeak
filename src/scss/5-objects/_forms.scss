@@ -1,0 +1,29 @@
+// ==========================================================================
+// #Forms
+// ==========================================================================
+
+
+.mui-textfield>input:focus,
+.mui-textfield>textarea:focus,
+.mui-select:focus>select {
+	border-color: $mui-form-border-color;
+}
+
+.mui-textfield>input:focus~label,
+.mui-textfield>textarea:focus~label {
+	color: $mui-form-text-color;
+}
+
+
+ 
+
+.mui-select__menu {
+    position: absolute;
+    z-index: 2;
+    min-width: 100%;
+    overflow-y: auto;
+    top: 50px!important;
+    padding: 8px 0;
+    background-color: #FFF;
+    font-size: 16px;
+}

@@ -1,0 +1,56 @@
+// ==========================================================================
+// #Site Footer
+// ==========================================================================
+
+
+.site-footer {
+	background-color: $footer-background;
+	color: $footer-color;
+
+	@extend %site-footer;
+	position: unset;
+	&--inverse {
+		background-color: $footer--inverse-background;
+		@extend %site-footer;
+	}// inverse
+
+	// Company Description
+	&__company-desc {
+		@extend %site-footer-desc;
+		&--inverse {
+			@extend %site-footer-desc;
+		}
+	}
+	&__logo {
+		@extend %site-footer-logo;
+		&--inverse {
+			@extend %site-footer-logo;
+		}
+	}
+	&__quote {
+		@extend %site-footer-quote;
+		&--inverse {
+			@extend %site-footer-quote;
+			color: $footer--inverse-quote-color;
+		}
+	}
+	&__support {
+		@extend %site-footer-support;
+		&--inverse {
+			@extend %site-footer-support;
+			color: $footer--inverse-support-color;
+		}
+	}
+
+	&__copyright {
+		@extend %site-footer-copyright;
+		&--inverse {
+			@extend %site-footer-copyright;
+			color: $footer--inverse-copyright-color;
+		}
+	}
+
+
+}// site-footer
+
+ 

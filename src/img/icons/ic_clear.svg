@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>clear</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_View" transform="translate(-1097.000000, -862.000000)">
+            <g id="clear" transform="translate(512.000000, 845.000000)">
+                <g transform="translate(568.000000, 0.000000)">
+                    <rect id="text-field-icon-bounds" x="0" y="0" width="48" height="48"></rect>
+                    <g id="action-icons/x-grey" transform="translate(12.000000, 12.000000)">
+                        <rect id="icon-bounds" x="0" y="0" width="24" height="24"></rect>
+                        <polygon id="Shape" fill="#B0B8BF" points="19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

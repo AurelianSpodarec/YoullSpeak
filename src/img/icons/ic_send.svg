@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_send</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile_tablet" transform="translate(-645.000000, -907.000000)">
+            <g id="card-copy" transform="translate(24.000000, 784.000000)">
+                <g id="reply" transform="translate(619.000000, 120.000000)">
+                    <g id="ic_send">
+                        <g id="Icon-24px">
+                            <polygon id="Shape" fill="#167F45" points="2.01 21 23 12 2.01 3 2 10 17 12 2 14"></polygon>
+                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

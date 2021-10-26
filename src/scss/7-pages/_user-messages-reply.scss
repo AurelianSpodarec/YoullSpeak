@@ -1,0 +1,131 @@
+// ==========================================================================
+// #User Message Reply
+// ==========================================================================
+
+
+.message-user {
+
+	&__header {
+		background: #F8F8F8;
+		font-size: 16px;
+		color: rgba(0,0,0,0.87);
+		line-height: 24px;
+		padding: 15px;
+		font-weight: $font-weight-regular;
+	}
+
+	&__list {
+		padding: 15px;
+		overflow-y: scroll;
+		min-height: 344px;
+    	max-height: 344px;
+    	&::-webkit-scrollbar {
+		    width: 12px;
+		}
+		 
+		&::-webkit-scrollbar-track {
+		    @include box-shadow(inset, 0, 0, 6px, rgba(0,0,0,0.3)); 
+		    @include border-radius(10px);
+		}
+		 
+		&::-webkit-scrollbar-thumb {
+		    @include border-radius(10px);
+		    @include box-shadow(inset, 0, 0, 6px, rgba(0,0,0,0.5)); 
+		}
+	}
+
+	&__reply {
+		display: table;
+		width: 100%;
+	}
+
+	&__avatar {
+		display: table-cell;
+		max-width: 56px;
+	}
+
+	&__content {
+		display: table-cell;
+		vertical-align: top;
+		padding: 0px 20px 40px 20px;
+		&--main {
+			text-align: right;
+		}
+	}
+
+	&__time-stamp {
+		font-size: 12px;
+		color: rgba(0,0,0,0.54);
+		&--main {
+    		float: right;
+		    width: 100%;
+		    text-align: right;
+		}
+	}
+
+	&__message {
+		@include border-radius(4px);
+		padding: 10px;
+		max-width: 419px;
+	    width: 100%;
+	    position: relative;
+		&--inverse {
+			background: #f1f0f0;
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				@include absolute(top 0 left -10px);
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid #f1f0f0;
+			}
+		}
+
+		&--main {
+			background: #E9F4FF;
+    		float: right;
+    		&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				@include absolute(top 0 right -10px);
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-top: 10px solid #E9F4FF;
+			}
+		}
+	}
+
+	&__input {
+		padding: 10px 25px;
+		border-top: 1px solid #BDBEC0;
+	}
+
+	&__send-wrap {
+		text-align: right;
+		padding: 25px;
+		background: #F8F8F8;
+	}
+	&__go-back {
+		float: left;
+	}
+	&__send-icon-wrap {
+		float: right;
+	}
+	&__send {
+		font-weight: $font-weight-regular;
+		font-size: 14px;
+		color: #167F45;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+	&__send-icon {
+		margin-right: 10px;
+	    float: left;
+	    margin-top: 1px;
+	}
+
+
+
+}
