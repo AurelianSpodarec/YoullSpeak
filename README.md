@@ -1,5 +1,33 @@
 # You'll Speak
 
+## Attaching history
+
+PSD to HTML
+Close the dialog
+Jun 18, 2017 - Oct 13, 2017
+$144.00 earned
+Fixed price
+Client's review
+Rating is 5.0 out of 5.
+5.0
+"Aurelian could successfully finilazy all tasks accordingly to our contract. With clear code and adjustment of all required corrections from our side, that is why we can recommend this developer as reliable, responsible and sensetive to details. Thank you very much for job Aurelian, and hope that you will help us with second release of our project."
+
+Endorsed by client
+Reliable
+Detail Oriented
+Accountable for Outcomes
+Freelancer's review to the client
+Rating is 5.0 out of 5.
+5.0
+"It was a pleasure to work with Maxim and Pavel. Very friendly, excellent co-operation and understanding on what we are doing.
+
+We had a chat about the design, asked me for the opinion, and we evolved step by step. Checking every night if everything works correctly and reporting any bugs found. Awesome.
+
+I would definitely work again with them."
+
+Job description
+This job is private
+
 ## I Will refactor the documentation with time. 
 
 ## Code Editor Settings
